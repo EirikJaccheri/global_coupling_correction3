@@ -1,0 +1,205 @@
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +     MAD-X 5.06.00  (64 bit, Linux)       +
+  + Support: mad@cern.ch, http://cern.ch/mad +
+  + Release   date: 2020.08.13               +
+  + Execution date: 2021.03.09 17:15:38      +
+  ++++++++++++++++++++++++++++++++++++++++++++
+system,"ln -fns /home/eirik/CERN/lhc/ lhc";
+
+
+
+Option, -echo,-warn,-info;
+
+exec,mk_beam(6500);
+
+++++++ info: nrj redefined
+use, sequence=lhcb1;
+
+
+
+
+
+
+
+CMRS.B1_sq    :=   0.;
+
+++++++ info: cmrs.b1_sq redefined
+CMRS.B1_sq    :=   0.;
+
+++++++ info: cmrs.b1_sq redefined
+
+
+
+
+
+
+KQSX3.R1 =  1. * 5.*1E-4;
+
+KQSX3.L1 = -5.*1E-4;
+
+
+
+KQSX3.R5 = 1. * 0.*1E-4;
+
+KQSX3.L5 = -0.*1E-4; 
+
+ 
+
+
+
+!adding quadrupole error
+
+select, flag = error, class = quadrupole, pattern = R5;
+
+select, flag = error, class = quadrupole, pattern = R5;
+
+efcomp, order = 2, dkn = {0,0.};
+
+Assigned field errors to 51 elements
+
+
+select, flag = error, clear = true;
+
+
+
+!adding skew quadrupole error
+
+SELECT, FLAG=ERROR, CLASS=quadrupole, PATTERN = .;
+
+SELECT, FLAG=ERROR, CLASS=quadrupole, PATTERN = .;
+
+EFCOMP, ORDER=2, dks := {0,0.0};
+
+Assigned field errors to 787 elements
+Replaced field errors for 51 elements
+ESAVE, FILE="outputfiles/errors.out";
+
+
+
+
+
+if (1 == 1){
+
+call, file = "outputfiles/changeparameters_iter_correct.madx";
+
+}
+
+cmrs.b1_sq = cmrs.b1_sq +1.951266e-08;
+
+++++++ info: cmrs.b1_sq redefined
+cmis.b1_sq = cmis.b1_sq -4.849323e-07;
+
+++++++ info: cmis.b1_sq redefined
+cmrs.b1_sq = cmrs.b1_sq -3.299031e-05;
+
+++++++ info: cmrs.b1_sq redefined
+cmis.b1_sq = cmis.b1_sq +2.468662e-04;
+
+++++++ info: cmis.b1_sq redefined
+
+
+!match before or after??
+
+MATCH, SEQUENCE=lhcb1;
+
+START MATCHING
+
+number of sequences: 1
+sequence name: lhcb1
+VARY, NAME=dQx.b1, STEP=1.0E-5;
+
+VARY, NAME=dQy.b1, STEP=1.0E-5;
+
+CONSTRAINT, SEQUENCE=lhcb1, RANGE=#e, MUX=62.315, MUY=60.315;
+
+LMDIF, CALLS=100, TOLERANCE=0.0000001;
+
+number of variables:    2
+user given constraints: 2
+total constraints:      2
+
+START LMDIF:
+
+Initial Penalty Function =   0.50223900E-02
+
+
+call:       4   Penalty function =   0.17302340E-06
+call:      11   Penalty function =   0.17288561E-06
+call:      15   Penalty function =   0.17288152E-06
+ ++++++++++ LMDIF ended: converged without success
+call:      21   Penalty function =   0.17288152E-06
+endmatch;
+
+
+MATCH SUMMARY
+
+Node_Name                  Constraint   Type  Target Value       Final Value        Penalty
+--------------------------------------------------------------------------------------------------
+lhcb1$end:1                mux          4     6.23150000E+01     6.23149705E+01     8.70530871E-08
+lhcb1$end:1                muy          4     6.03150000E+01     6.03150293E+01     8.58284375E-08
+
+
+Final Penalty Function =   1.72881525e-07
+
+
+
+
+
+Variable                 Final Value  Initial Value Lower Limit  Upper Limit 
+--------------------------------------------------------------------------------
+dqx.b1                    5.18772e-03  0.00000e+00 -1.00000e+20  1.00000e+20
+dqy.b1                   -4.61908e-03  0.00000e+00 -1.00000e+20  1.00000e+20
+
+END MATCH SUMMARY
+
+VARIABLE "TAR" SET TO   1.72881525e-07
+
+
+select, flag = twiss,column=name, s, betx, bety, mux, muy, alfx, alfy, R11, R12, R21, R22, pattern =BPM;
+
+twiss, file="outputfiles/twiss.dat";
+
+enter Twiss module
+++++++ info: Zero value of SIGT replaced by 1.
+++++++ info: Zero value of SIGT replaced by 1.
+  
+iteration:   1 error:   1.612615E-03 deltap:   0.000000E+00
+orbit:  -4.737194E-04 -1.507887E-04 -1.809786E-05  1.867204E-04  0.000000E+00  0.000000E+00
+  
+iteration:   2 error:   1.152859E-04 deltap:   0.000000E+00
+orbit:  -5.235273E-04  4.289863E-08  6.325386E-07  1.554371E-04  0.000000E+00  0.000000E+00
+  
+iteration:   3 error:   6.162324E-07 deltap:   0.000000E+00
+orbit:  -5.235725E-04  5.794814E-07  7.416744E-07  1.554290E-04  0.000000E+00  0.000000E+00
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+        26658.8832                 -0    0.0003484038143        53.57455217 
+
+                q1                dq1            betxmax              dxmax 
+        62.3149705       0.7738629783        8063.342384        3.184027377 
+
+             dxrms             xcomax             xcorms                 q2 
+       1.525399288      0.01215237444    0.0008487767594         60.3150293 
+
+               dq2            betymax              dymax              dyrms 
+       1.709480879        7983.674842         3.14664767       0.3591578559 
+
+            ycomax             ycorms             deltap            synch_1 
+     0.01271607337    0.0009097003386                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+stop;
+
+
+  Number of warnings: 0
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +          MAD-X finished normally         +
+  ++++++++++++++++++++++++++++++++++++++++++++

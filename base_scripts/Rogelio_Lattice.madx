@@ -1,0 +1,57 @@
+circum=60.;
+
+lcell=20.;
+
+f=lcell/sin(pi/4)/4;
+
+k=1.0/f;
+
+sk=0.01;
+
+qf: multipole, knl={0, k};
+
+qd: multipole, knl={0, -k};
+
+sq1:  multipole, ksl={0, sk};
+
+sq2: multipole, ksl={0, -sk};
+
+ 
+
+seq: sequence, refer=center, l=circum;
+
+qf_a: qf, at = 0 ;
+
+sq1_b: sq1, at = 0;
+
+qd_c: qd, at = 0.5 * lcell;
+
+qf_d: qf, at = 1.0 * lcell;
+
+qd_e: qd, at = 1.5 * lcell;
+
+qf_f: qf, at = 2.0 * lcell;
+
+sq2_g: sq2, at=2.0 * lcell;
+
+qd_h: qd, at = 2.5 * lcell;
+
+endsequence;
+
+ 
+
+beam;
+
+use, sequence=seq;
+
+ 
+
+select, flag=twiss, column=name, s, betx, bety, mux, muy, r11, r12, r21, r22, alfx, alfy, k1sl;
+
+ 
+
+ 
+
+twiss, file="outputfiles/twiss.dat";
+
+stop;

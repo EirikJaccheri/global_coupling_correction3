@@ -1,0 +1,6 @@
+@ PATH                 %s        "outputfiles"
+@ DATE                 %s "Mon Jun 28 09:52:57 2021"
+* NAME                                DELTA
+$ %s                                    %le
+  "b1_im_ip7_knob"         0.00168291992719
+  "b1_re_ip7_knob"       -0.000272987060735

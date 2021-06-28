@@ -1,0 +1,272 @@
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +     MAD-X 5.06.00  (64 bit, Linux)       +
+  + Support: mad@cern.ch, http://cern.ch/mad +
+  + Release   date: 2020.08.13               +
+  + Execution date: 2021.04.27 09:59:07      +
+  ++++++++++++++++++++++++++++++++++++++++++++
+system,"ln -fns /home/eirik/CERN/lhc2018/2018/ lhc";
+
+
+
+Option, -echo,-warn,-info;
+
+exec,mk_beam(6500);
+
+++++++ info: nrj redefined
+use, sequence=lhcb1;
+
+
+
+if (1 == 1){
+
+call, file = "outputfiles/changeparameters_iter_correct.madx";
+
+}
+
+cmis.b1_sq = cmis.b1_sq -3.575185e-03;
+
+++++++ info: cmis.b1_sq redefined
+cmrs.b1_sq = cmrs.b1_sq -4.573947e-03;
+
+++++++ info: cmrs.b1_sq redefined
+
+
+
+
+!Ealign error in mcs
+
+kcs.a12b1 = 0.163;
+
+kcs.a23b1 = 0.194;
+
+kcs.a34b1 = 0.237;
+
+kcs.a45b1 = 0.161;
+
+kcs.a56b1 = 0.177;
+
+kcs.a67b1 = 0.188;
+
+kcs.a81b1 = 0.169;
+
+
+
+!adding skew quadrupole error
+
+SELECT, FLAG=ERROR, CLASS=MCS;
+
+EALIGN, DX = 0., DY = 0.0004;
+
+Assigned alignment errors to 1232 elements
+ESAVE, FILE="outputfiles/errors.out";
+
+
+
+select, flag = error, clear = true;
+
+
+
+!correction with all KQS of mcs missalignment
+
+call, file="/home/eirik/CERN/global_coupling_correction3/KQS_correction/outputfiles/changeparameters_iter_correct_allKQS.madx";
+
+kqs.l6b1 = kqs.l6b1 +2.912212e-04;
+
+++++++ info: kqs.l6b1 redefined
+kqs.r1b1 = kqs.r1b1 +3.424807e-04;
+
+++++++ info: kqs.r1b1 redefined
+kqs.l2b1 = kqs.l2b1 +3.091298e-04;
+
+++++++ info: kqs.l2b1 redefined
+kqs.l8b1 = kqs.l8b1 -1.358918e-04;
+
+++++++ info: kqs.l8b1 redefined
+kqs.a81b1 = kqs.a81b1 +4.533699e-04;
+
+++++++ info: kqs.a81b1 redefined
+kqs.r7b1 = kqs.r7b1 -1.919934e-04;
+
+++++++ info: kqs.r7b1 redefined
+kqs.a67b1 = kqs.a67b1 +6.654572e-04;
+
+++++++ info: kqs.a67b1 redefined
+kqs.a23b1 = kqs.a23b1 -6.360913e-04;
+
+++++++ info: kqs.a23b1 redefined
+kqs.r5b1 = kqs.r5b1 +3.910116e-04;
+
+++++++ info: kqs.r5b1 redefined
+kqs.a45b1 = kqs.a45b1 +3.141905e-04;
+
+++++++ info: kqs.a45b1 redefined
+kqs.l6b1 = kqs.l6b1 +2.900332e-04;
+
+++++++ info: kqs.l6b1 redefined
+kqs.r1b1 = kqs.r1b1 +2.513273e-04;
+
+++++++ info: kqs.r1b1 redefined
+kqs.l2b1 = kqs.l2b1 +1.086409e-04;
+
+++++++ info: kqs.l2b1 redefined
+kqs.l8b1 = kqs.l8b1 -2.656128e-04;
+
+++++++ info: kqs.l8b1 redefined
+kqs.a81b1 = kqs.a81b1 +2.852854e-04;
+
+++++++ info: kqs.a81b1 redefined
+kqs.r7b1 = kqs.r7b1 -1.903184e-04;
+
+++++++ info: kqs.r7b1 redefined
+kqs.a67b1 = kqs.a67b1 -8.507726e-05;
+
+++++++ info: kqs.a67b1 redefined
+kqs.a23b1 = kqs.a23b1 +3.401712e-04;
+
+++++++ info: kqs.a23b1 redefined
+kqs.r5b1 = kqs.r5b1 +2.592786e-04;
+
+++++++ info: kqs.r5b1 redefined
+kqs.a45b1 = kqs.a45b1 +5.730390e-04;
+
+++++++ info: kqs.a45b1 redefined
+
+
+!adding quadrupole error
+
+select, flag = error, class = quadrupole, pattern = R5;
+
+select, flag = error, class = quadrupole, pattern = R5;
+
+efcomp, order = 2, dkn = {0,0.000006};
+
+Assigned field errors to 51 elements
+ESAVE, FILE="outputfiles/quad_errors.out";
+
+
+
+select, flag = error, clear = true;
+
+
+
+!adding skew quadrupole error
+
+SELECT, FLAG=ERROR, CLASS=quadrupole, PATTERN = MQ.18R2.B1;
+
+SELECT, FLAG=ERROR, CLASS=quadrupole, PATTERN = MQ.18R2.B1;
+
+EFCOMP, ORDER=2, dks := {0,0.0004};
+
+Assigned field errors to 1 elements
+ESAVE, FILE="outputfiles/errors.out";
+
+
+
+
+
+!match before or after??
+
+MATCH, SEQUENCE=lhcb1;
+
+START MATCHING
+
+number of sequences: 1
+sequence name: lhcb1
+VARY, NAME=dQx.b1, STEP=1.0E-5;
+
+VARY, NAME=dQy.b1, STEP=1.0E-5;
+
+CONSTRAINT, SEQUENCE=lhcb1, RANGE=#e, MUX=62.315, MUY=60.315;
+
+LMDIF, CALLS=100, TOLERANCE=0.0000001;
+
+number of variables:    2
+user given constraints: 2
+total constraints:      2
+
+START LMDIF:
+
+Initial Penalty Function =   0.77446609E-03
+
+
+call:       4   Penalty function =   0.13320389E-04
+call:       9   Penalty function =   0.13101593E-04
+call:      13   Penalty function =   0.13094232E-04
+call:      18   Penalty function =   0.13094232E-04
+ ++++++++++ LMDIF ended: converged: info =            1
+call:      18   Penalty function =   0.13094232E-04
+endmatch;
+
+
+MATCH SUMMARY
+
+Node_Name                  Constraint   Type  Target Value       Final Value        Penalty
+--------------------------------------------------------------------------------------------------
+lhcb1$end:1                mux          4     6.23150000E+01     6.23147442E+01     6.54573242E-06
+lhcb1$end:1                muy          4     6.03150000E+01     6.03152559E+01     6.54849990E-06
+
+
+Final Penalty Function =   1.30942323e-05
+
+
+
+
+
+Variable                 Final Value  Initial Value Lower Limit  Upper Limit 
+--------------------------------------------------------------------------------
+dqx.b1                    1.79595e-03  0.00000e+00 -1.00000e+20  1.00000e+20
+dqy.b1                   -2.09628e-03  0.00000e+00 -1.00000e+20  1.00000e+20
+
+END MATCH SUMMARY
+
+VARIABLE "TAR" SET TO   1.30942323e-05
+
+
+select, flag = twiss,column=name, s, betx, bety, mux, muy, alfx, alfy, R11, R12, R21, R22, pattern =BPM;
+
+twiss, file="outputfiles/twiss.dat";
+
+enter Twiss module
+++++++ info: Zero value of SIGT replaced by 1.
+++++++ info: Zero value of SIGT replaced by 1.
+  
+iteration:   1 error:   1.605066E-03 deltap:   0.000000E+00
+orbit:  -5.502015E-04  4.634824E-07  2.133445E-05  1.610474E-04  0.000000E+00  0.000000E+00
+  
+iteration:   2 error:   1.602974E-05 deltap:   0.000000E+00
+orbit:  -5.530517E-04 -9.203956E-08  2.079809E-06  1.599726E-04  0.000000E+00  0.000000E+00
+  
+iteration:   3 error:   4.481213E-09 deltap:   0.000000E+00
+orbit:  -5.530545E-04 -9.231661E-08  2.077680E-06  1.599728E-04  0.000000E+00  0.000000E+00
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+        26658.8832                 -0    0.0003478197762         53.6195129 
+
+                q1                dq1            betxmax              dxmax 
+       62.31474415        253.5368299         590.952159        2.779238311 
+
+             dxrms             xcomax             xcorms                 q2 
+       1.499835516      0.01250073201     0.000859069598         60.3152559 
+
+               dq2            betymax              dymax              dyrms 
+      -207.4017378         652.071233       0.3920784103      0.09692529343 
+
+            ycomax             ycorms             deltap            synch_1 
+     0.01301891497    0.0009500163561                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+stop;
+
+
+  Number of warnings: 0
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +          MAD-X finished normally         +
+  ++++++++++++++++++++++++++++++++++++++++++++

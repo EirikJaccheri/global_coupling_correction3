@@ -1,0 +1,4 @@
+cmrs.b1_sq = cmrs.b1_sq +1.951266e-08;
+cmis.b1_sq = cmis.b1_sq -4.849323e-07;
+cmrs.b1_sq = cmrs.b1_sq -3.299031e-05;
+cmis.b1_sq = cmis.b1_sq +2.468662e-04;

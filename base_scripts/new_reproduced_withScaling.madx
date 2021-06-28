@@ -1,0 +1,34 @@
+!!!THIS FILE IS TO REPRODUCE THE ERROS IN THE MACHINE!!!! (POSSIBLE TO DIRECTLY PLUG INTO SEGMENT-BY-SEGMENT)
+
+calibError = 1.0017;
+!***********************IP5*****************************
+bbmext.knob1 = 1.000000;
+ktqx1.r5       = ktqx1.r5         +   2.0000000000E-05 * bbmext.knob1; ! Circuit name: MQXA1.R5/K1.
+ktqx1.l5       = ktqx1.l5         -   2.0000000000E-05 * bbmext.knob1; ! Circuit name: MQXA1.R5/K1.
+MQXA.3R5->K1 = MQXA.3R5->K1 *calibError;
+MQXA.3L5->K1 = MQXA.3L5->K1 *calibError;
+
+ktqx2.r5       = ktqx2.r5         +   1.6000000E-05 * bbmext.knob1; ! Circuit name: MQXB2.R5/K1.
+ktqx2.l5       = ktqx2.l5         +   2.0000000000E-06 * bbmext.knob1; ! Circuit name: MQXB2.L5/K1.
+
+!***********************IP1*****************************
+calibError = 1.0014;
+calibErrorQ1= 1.0014;
+bbmext.knob1 = 1; ! Value of knob LHCBEAM/2015_LOCAL_CORR_Squeeze_IR1
+ktqx2.l1         = ktqx2.l1         +   6.5000000000E-06 * bbmext.knob1; ! Circuit name: MQXB2.L1/K1.
+ktqx2.r1         = ktqx2.r1         -   10.0000000000E-06 * bbmext.knob1; ! Circuit name: MQXB2.R1/K1.
+
+MQXA.1L1->K1 = MQXA.1L1->K1 *calibErrorQ1;
+MQXA.1R1->K1 = MQXA.1R1->K1 *calibErrorQ1;
+MQXA.3R1->K1 = MQXA.3R1->K1 *calibError;
+MQXA.3L1->K1 = MQXA.3L1->K1 *calibError;
+
+!IP1 shift
+!x_shift =  -0.23427768703 y_shift =  0.228582859625
+!bx=  0.8739038899 ax= -0.2907431231
+!by=  0.8554398619 ay= 0.2896253091
+
+!IP5 shift
+!x_shift =  -0.177009730728 y_shift =  0.187987810406
+!bx=  0.8308596831 ax= -0.2237057016
+!by=  0.8438855646 ay= 0.2350745576

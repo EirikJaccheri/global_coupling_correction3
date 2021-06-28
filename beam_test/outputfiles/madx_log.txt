@@ -1,0 +1,231 @@
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +     MAD-X 5.06.00  (64 bit, Linux)       +
+  + Support: mad@cern.ch, http://cern.ch/mad +
+  + Release   date: 2020.08.13               +
+  + Execution date: 2021.04.22 16:04:27      +
+  ++++++++++++++++++++++++++++++++++++++++++++
+system,"ln -fns /home/eirik/CERN/lhc2018/2018/ lhc";
+
+
+
+Option, -echo,-warn,-info;
+
+exec,mk_beam(6500);
+
+++++++ info: nrj redefined
+use, sequence=lhcb1;
+
+
+
+KQSX3.L1 = 11.0 * 1e-4;
+
+KQSX3.R1 = 7.0 * 1e-4;
+
+KQSX3.L2 = -14.0 * 1e-4;
+
+KQSX3.R2 = -14.0 * 1e-4;
+
+KQSX3.L5 = 7.0 * 1e-4;
+
+KQSX3.R5 = 7.0 * 1e-4;
+
+KQSX3.L8 = -5.0 * 1e-4;
+
+KQSX3.R8 = -5.0 * 1e-4; 
+
+
+
+call, file = "/home/eirik/CERN/global_coupling_correction3/base_scripts/new_reproduced_withScaling.madx";
+
+!!!THIS FILE IS TO REPRODUCE THE ERROS IN THE MACHINE!!!! (POSSIBLE TO DIRECTLY PLUG INTO SEGMENT-BY-SEGMENT)
+
+
+
+calibError = 1.0017;
+
+!***********************IP5*****************************
+
+bbmext.knob1 = 1.000000;
+
+ktqx1.r5       = ktqx1.r5         +   2.0000000000E-05 * bbmext.knob1; ! Circuit name: MQXA1.R5/K1.
+
+++++++ info: ktqx1.r5 redefined
+ktqx1.l5       = ktqx1.l5         -   2.0000000000E-05 * bbmext.knob1; ! Circuit name: MQXA1.R5/K1.
+
+++++++ info: ktqx1.l5 redefined
+MQXA.3R5->K1 = MQXA.3R5->K1 *calibError;
+
+MQXA.3L5->K1 = MQXA.3L5->K1 *calibError;
+
+
+
+ktqx2.r5       = ktqx2.r5         +   1.6000000E-05 * bbmext.knob1; ! Circuit name: MQXB2.R5/K1.
+
+++++++ info: ktqx2.r5 redefined
+ktqx2.l5       = ktqx2.l5         +   2.0000000000E-06 * bbmext.knob1; ! Circuit name: MQXB2.L5/K1.
+
+++++++ info: ktqx2.l5 redefined
+
+
+!***********************IP1*****************************
+
+calibError = 1.0014;
+
+++++++ info: caliberror redefined
+calibErrorQ1= 1.0014;
+
+bbmext.knob1 = 1; ! Value of knob LHCBEAM/2015_LOCAL_CORR_Squeeze_IR1
+
+++++++ info: bbmext.knob1 redefined
+ktqx2.l1         = ktqx2.l1         +   6.5000000000E-06 * bbmext.knob1; ! Circuit name: MQXB2.L1/K1.
+
+++++++ info: ktqx2.l1 redefined
+ktqx2.r1         = ktqx2.r1         -   10.0000000000E-06 * bbmext.knob1; ! Circuit name: MQXB2.R1/K1.
+
+++++++ info: ktqx2.r1 redefined
+
+
+MQXA.1L1->K1 = MQXA.1L1->K1 *calibErrorQ1;
+
+MQXA.1R1->K1 = MQXA.1R1->K1 *calibErrorQ1;
+
+MQXA.3R1->K1 = MQXA.3R1->K1 *calibError;
+
+MQXA.3L1->K1 = MQXA.3L1->K1 *calibError;
+
+
+
+!IP1 shift
+
+!x_shift =  -0.23427768703 y_shift =  0.228582859625
+
+!bx=  0.8739038899 ax= -0.2907431231
+
+!by=  0.8554398619 ay= 0.2896253091
+
+
+
+!IP5 shift
+
+!x_shift =  -0.177009730728 y_shift =  0.187987810406
+
+!bx=  0.8308596831 ax= -0.2237057016
+
+!by=  0.8438855646 ay= 0.2350745576
+
+
+
+if (0 == 1){
+
+call, file = "outputfiles/changeparameters_iter_correct.madx";
+
+}
+
+
+
+!match before or after??
+
+MATCH, SEQUENCE=lhcb1;
+
+START MATCHING
+
+number of sequences: 1
+sequence name: lhcb1
+VARY, NAME=dQx.b1, STEP=1.0E-5;
+
+VARY, NAME=dQy.b1, STEP=1.0E-5;
+
+CONSTRAINT, SEQUENCE=lhcb1, RANGE=#e, MUX=62.315, MUY=60.315;
+
+LMDIF, CALLS=100, TOLERANCE=0.0000001;
+
+number of variables:    2
+user given constraints: 2
+total constraints:      2
+
+START LMDIF:
+
+Initial Penalty Function =   0.15055863E-01
+
+
+call:       4   Penalty function =   0.11341081E-01
+call:       7   Penalty function =   0.64788542E-02
+call:      11   Penalty function =   0.63645054E-02
+call:      17   Penalty function =   0.63645054E-02
+ ++++++++++ LMDIF ended: converged: info =            1
+call:      17   Penalty function =   0.63645054E-02
+endmatch;
+
+
+MATCH SUMMARY
+
+Node_Name                  Constraint   Type  Target Value       Final Value        Penalty
+--------------------------------------------------------------------------------------------------
+lhcb1$end:1                mux          4     6.23150000E+01     6.23093580E+01     3.18325083E-03
+lhcb1$end:1                muy          4     6.03150000E+01     6.03206403E+01     3.18125456E-03
+
+
+Final Penalty Function =   6.36450539e-03
+
+
+
+
+
+Variable                 Final Value  Initial Value Lower Limit  Upper Limit 
+--------------------------------------------------------------------------------
+dqx.b1                    7.97873e-03  0.00000e+00 -1.00000e+20  1.00000e+20
+dqy.b1                   -4.72549e-03  0.00000e+00 -1.00000e+20  1.00000e+20
+
+END MATCH SUMMARY
+
+VARIABLE "TAR" SET TO   6.36450539e-03
+
+
+select, flag = twiss,column=name, s, betx, bety, mux, muy, alfx, alfy, R11, R12, R21, R22, pattern =BPM;
+
+twiss, file="outputfiles/twiss.dat";
+
+enter Twiss module
+++++++ info: Zero value of SIGT replaced by 1.
+++++++ info: Zero value of SIGT replaced by 1.
+  
+iteration:   1 error:   1.447483E-03 deltap:   0.000000E+00
+orbit:  -6.480822E-04 -2.679701E-06  3.792314E-05  1.625489E-04  0.000000E+00  0.000000E+00
+  
+iteration:   2 error:   2.473717E-05 deltap:   0.000000E+00
+orbit:  -6.388467E-04 -4.017748E-06  3.543374E-05  1.612255E-04  0.000000E+00  0.000000E+00
+  
+iteration:   3 error:   1.590536E-09 deltap:   0.000000E+00
+orbit:  -6.388456E-04 -4.017583E-06  3.543372E-05  1.612253E-04  0.000000E+00  0.000000E+00
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+        26658.8832                 -0    0.0003478812567        53.61477464 
+
+                q1                dq1            betxmax              dxmax 
+       62.30935797        1.476770769        597.9046058        2.818314633 
+
+             dxrms             xcomax             xcorms                 q2 
+       1.500862128       0.0126614816    0.0008751077641        60.32064026 
+
+               dq2            betymax              dymax              dyrms 
+       1.950047763        676.3348666       0.3356948091       0.0847067511 
+
+            ycomax             ycorms             deltap            synch_1 
+      0.0100043896    0.0007601298885                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+stop;
+
+
+  Number of warnings: 0
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +          MAD-X finished normally         +
+  ++++++++++++++++++++++++++++++++++++++++++++

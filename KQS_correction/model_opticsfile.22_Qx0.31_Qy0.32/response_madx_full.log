@@ -1,0 +1,1723 @@
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +     MAD-X 5.06.00  (64 bit, Linux)       +
+  + Support: mad@cern.ch, http://cern.ch/mad +
+  + Release   date: 2020.08.13               +
+  + Execution date: 2021.03.25 11:23:55      +
+  ++++++++++++++++++++++++++++++++++++++++++++
+option, -echo;
+
+++++++ warning: implicit element re-definition ignored: ip1
+++++++ warning: implicit element re-definition ignored: mbas2.1r1
+++++++ warning: implicit element re-definition ignored: tas.1r1
+++++++ warning: implicit element re-definition ignored: bpmwk.1r1
+++++++ warning: implicit element re-definition ignored: mqxa.1r1
+++++++ warning: implicit element re-definition ignored: mcbxh.1r1
+++++++ warning: implicit element re-definition ignored: mcbxv.1r1
+++++++ warning: implicit element re-definition ignored: mqxb.a2r1
+++++++ warning: implicit element re-definition ignored: mcbxh.2r1
+++++++ warning: implicit element re-definition ignored: mcbxv.2r1
+++++++ warning: implicit element re-definition ignored: mqxb.b2r1
+++++++ warning: implicit element re-definition ignored: tasb.3r1
+++++++ warning: implicit element re-definition ignored: mqsx.3r1
+++++++ warning: implicit element re-definition ignored: mqxa.3r1
+++++++ warning: implicit element re-definition ignored: mcbxh.3r1
+++++++ warning: implicit element re-definition ignored: mcbxv.3r1
+++++++ warning: implicit element re-definition ignored: mcsx.3r1
+++++++ warning: implicit element re-definition ignored: mctx.3r1
+++++++ warning: implicit element re-definition ignored: mcosx.3r1
+++++++ warning: implicit element re-definition ignored: mcox.3r1
+++++++ warning: implicit element re-definition ignored: mcssx.3r1
+++++++ warning: implicit element re-definition ignored: dfbxb.3r1
+++++++ warning: implicit element re-definition ignored: mbxw.a4r1
+++++++ warning: implicit element re-definition ignored: mbxw.b4r1
+++++++ warning: implicit element re-definition ignored: mbxw.c4r1
+++++++ warning: implicit element re-definition ignored: mbxw.d4r1
+++++++ warning: implicit element re-definition ignored: mbxw.e4r1
+++++++ warning: implicit element re-definition ignored: mbxw.f4r1
+++++++ warning: implicit element re-definition ignored: x1fcr.4r1
+++++++ warning: implicit element re-definition ignored: brana.4r1
+++++++ warning: implicit element re-definition ignored: x1zdc.a4r1
+++++++ warning: implicit element re-definition ignored: tanar.4r1
+++++++ warning: implicit element re-definition ignored: x2zdc.4l2
+++++++ warning: implicit element re-definition ignored: branb.4l2
+++++++ warning: implicit element re-definition ignored: btvst.a4l2
+++++++ warning: implicit element re-definition ignored: tcdd.4l2
+++++++ warning: implicit element re-definition ignored: mbx.4l2
+++++++ warning: implicit element re-definition ignored: dfbxc.3l2
+++++++ warning: implicit element re-definition ignored: mcosx.3l2
+++++++ warning: implicit element re-definition ignored: mcox.3l2
+++++++ warning: implicit element re-definition ignored: mcssx.3l2
+++++++ warning: implicit element re-definition ignored: mcbxh.3l2
+++++++ warning: implicit element re-definition ignored: mcbxv.3l2
+++++++ warning: implicit element re-definition ignored: mcsx.3l2
+++++++ warning: implicit element re-definition ignored: mctx.3l2
+++++++ warning: implicit element re-definition ignored: mqxa.3l2
+++++++ warning: implicit element re-definition ignored: mqsx.3l2
+++++++ warning: implicit element re-definition ignored: mqxb.b2l2
+++++++ warning: implicit element re-definition ignored: mcbxh.2l2
+++++++ warning: implicit element re-definition ignored: mcbxv.2l2
+++++++ warning: implicit element re-definition ignored: mqxb.a2l2
+++++++ warning: implicit element re-definition ignored: mcbxh.1l2
+++++++ warning: implicit element re-definition ignored: mcbxv.1l2
+++++++ warning: implicit element re-definition ignored: mqxa.1l2
+++++++ warning: implicit element re-definition ignored: mbxwt.1l2
+++++++ warning: implicit element re-definition ignored: mbwmd.1l2
+++++++ warning: implicit element re-definition ignored: mbls2.1l2
+++++++ warning: implicit element re-definition ignored: ip2
+++++++ warning: implicit element re-definition ignored: mbls2.1r2
+++++++ warning: implicit element re-definition ignored: mbaw.1r2
+++++++ warning: implicit element re-definition ignored: mbxwt.1r2
+++++++ warning: implicit element re-definition ignored: mqxa.1r2
+++++++ warning: implicit element re-definition ignored: mcbxh.1r2
+++++++ warning: implicit element re-definition ignored: mcbxv.1r2
+++++++ warning: implicit element re-definition ignored: mqxb.a2r2
+++++++ warning: implicit element re-definition ignored: mcbxh.2r2
+++++++ warning: implicit element re-definition ignored: mcbxv.2r2
+++++++ warning: implicit element re-definition ignored: mqxb.b2r2
+++++++ warning: implicit element re-definition ignored: mqsx.3r2
+++++++ warning: implicit element re-definition ignored: mqxa.3r2
+++++++ warning: implicit element re-definition ignored: mcbxh.3r2
+++++++ warning: implicit element re-definition ignored: mcbxv.3r2
+++++++ warning: implicit element re-definition ignored: mcsx.3r2
+++++++ warning: implicit element re-definition ignored: mctx.3r2
+++++++ warning: implicit element re-definition ignored: mcosx.3r2
+++++++ warning: implicit element re-definition ignored: mcox.3r2
+++++++ warning: implicit element re-definition ignored: mcssx.3r2
+++++++ warning: implicit element re-definition ignored: dfbxd.3r2
+++++++ warning: implicit element re-definition ignored: mbx.4r2
+++++++ warning: implicit element re-definition ignored: tclia.4r2
+++++++ warning: implicit element re-definition ignored: branb.4r2
+++++++ warning: implicit element re-definition ignored: x2zdc.4r2
+++++++ warning: implicit element re-definition ignored: ip3
+++++++ warning: implicit element re-definition ignored: ip4
+++++++ warning: implicit element re-definition ignored: tanc.4l5
+++++++ warning: implicit element re-definition ignored: x5zdc.b4l5
+++++++ warning: implicit element re-definition ignored: brana.4l5
+++++++ warning: implicit element re-definition ignored: x5zdc.a4l5
+++++++ warning: implicit element re-definition ignored: x5fcb.a4l5
+++++++ warning: implicit element re-definition ignored: x5fca.b4l5
+++++++ warning: implicit element re-definition ignored: mbxw.f4l5
+++++++ warning: implicit element re-definition ignored: mbxw.e4l5
+++++++ warning: implicit element re-definition ignored: mbxw.d4l5
+++++++ warning: implicit element re-definition ignored: mbxw.c4l5
+++++++ warning: implicit element re-definition ignored: mbxw.b4l5
+++++++ warning: implicit element re-definition ignored: mbxw.a4l5
+++++++ warning: implicit element re-definition ignored: x5fca.a4l5
+++++++ warning: implicit element re-definition ignored: dfbxe.3l5
+++++++ warning: implicit element re-definition ignored: mcosx.3l5
+++++++ warning: implicit element re-definition ignored: mcox.3l5
+++++++ warning: implicit element re-definition ignored: mcssx.3l5
+++++++ warning: implicit element re-definition ignored: mcbxh.3l5
+++++++ warning: implicit element re-definition ignored: mcbxv.3l5
+++++++ warning: implicit element re-definition ignored: mcsx.3l5
+++++++ warning: implicit element re-definition ignored: mctx.3l5
+++++++ warning: implicit element re-definition ignored: mqxa.3l5
+++++++ warning: implicit element re-definition ignored: mqsx.3l5
+++++++ warning: implicit element re-definition ignored: tasb.3l5
+++++++ warning: implicit element re-definition ignored: mqxb.b2l5
+++++++ warning: implicit element re-definition ignored: mcbxh.2l5
+++++++ warning: implicit element re-definition ignored: mcbxv.2l5
+++++++ warning: implicit element re-definition ignored: mqxb.a2l5
+++++++ warning: implicit element re-definition ignored: mcbxh.1l5
+++++++ warning: implicit element re-definition ignored: mcbxv.1l5
+++++++ warning: implicit element re-definition ignored: mqxa.1l5
+++++++ warning: implicit element re-definition ignored: bpmwk.1l5
+++++++ warning: implicit element re-definition ignored: tas.1l5
+++++++ warning: implicit element re-definition ignored: mbcs2.1l5
+++++++ warning: implicit element re-definition ignored: ip5
+++++++ warning: implicit element re-definition ignored: mbcs2.1r5
+++++++ warning: implicit element re-definition ignored: tas.1r5
+++++++ warning: implicit element re-definition ignored: bpmwk.1r5
+++++++ warning: implicit element re-definition ignored: mqxa.1r5
+++++++ warning: implicit element re-definition ignored: mcbxh.1r5
+++++++ warning: implicit element re-definition ignored: mcbxv.1r5
+++++++ warning: implicit element re-definition ignored: mqxb.a2r5
+++++++ warning: implicit element re-definition ignored: mcbxh.2r5
+++++++ warning: implicit element re-definition ignored: mcbxv.2r5
+++++++ warning: implicit element re-definition ignored: mqxb.b2r5
+++++++ warning: implicit element re-definition ignored: tasb.3r5
+++++++ warning: implicit element re-definition ignored: mqsx.3r5
+++++++ warning: implicit element re-definition ignored: mqxa.3r5
+++++++ warning: implicit element re-definition ignored: mcbxh.3r5
+++++++ warning: implicit element re-definition ignored: mcbxv.3r5
+++++++ warning: implicit element re-definition ignored: mcsx.3r5
+++++++ warning: implicit element re-definition ignored: mctx.3r5
+++++++ warning: implicit element re-definition ignored: mcosx.3r5
+++++++ warning: implicit element re-definition ignored: mcox.3r5
+++++++ warning: implicit element re-definition ignored: mcssx.3r5
+++++++ warning: implicit element re-definition ignored: dfbxf.3r5
+++++++ warning: implicit element re-definition ignored: x5fca.b4r5
+++++++ warning: implicit element re-definition ignored: mbxw.a4r5
+++++++ warning: implicit element re-definition ignored: mbxw.b4r5
+++++++ warning: implicit element re-definition ignored: mbxw.c4r5
+++++++ warning: implicit element re-definition ignored: mbxw.d4r5
+++++++ warning: implicit element re-definition ignored: mbxw.e4r5
+++++++ warning: implicit element re-definition ignored: mbxw.f4r5
+++++++ warning: implicit element re-definition ignored: x5fca.a4r5
+++++++ warning: implicit element re-definition ignored: x5fcb.a4r5
+++++++ warning: implicit element re-definition ignored: x5zdc.b4r5
+++++++ warning: implicit element re-definition ignored: brana.4r5
+++++++ warning: implicit element re-definition ignored: x5zdc.a4r5
+++++++ warning: implicit element re-definition ignored: tanc.4r5
+++++++ warning: implicit element re-definition ignored: ip6
+++++++ warning: implicit element re-definition ignored: ip7
+++++++ warning: implicit element re-definition ignored: branb.4l8
+++++++ warning: implicit element re-definition ignored: tclia.4l8
+++++++ warning: implicit element re-definition ignored: mbx.4l8
+++++++ warning: implicit element re-definition ignored: dfbxg.3l8
+++++++ warning: implicit element re-definition ignored: mcosx.3l8
+++++++ warning: implicit element re-definition ignored: mcox.3l8
+++++++ warning: implicit element re-definition ignored: mcssx.3l8
+++++++ warning: implicit element re-definition ignored: mcbxh.3l8
+++++++ warning: implicit element re-definition ignored: mcbxv.3l8
+++++++ warning: implicit element re-definition ignored: mcsx.3l8
+++++++ warning: implicit element re-definition ignored: mctx.3l8
+++++++ warning: implicit element re-definition ignored: mqxa.3l8
+++++++ warning: implicit element re-definition ignored: mqsx.3l8
+++++++ warning: implicit element re-definition ignored: mqxb.b2l8
+++++++ warning: implicit element re-definition ignored: mcbxh.2l8
+++++++ warning: implicit element re-definition ignored: mcbxv.2l8
+++++++ warning: implicit element re-definition ignored: mqxb.a2l8
+++++++ warning: implicit element re-definition ignored: mcbxh.1l8
+++++++ warning: implicit element re-definition ignored: mcbxv.1l8
+++++++ warning: implicit element re-definition ignored: mqxa.1l8
+++++++ warning: implicit element re-definition ignored: mbxws.1l8
+++++++ warning: implicit element re-definition ignored: mbxwh.1l8
+++++++ warning: implicit element re-definition ignored: ip8
+++++++ warning: implicit element re-definition ignored: mblw.1r8
+++++++ warning: implicit element re-definition ignored: mbxws.1r8
+++++++ warning: implicit element re-definition ignored: mqxa.1r8
+++++++ warning: implicit element re-definition ignored: mcbxh.1r8
+++++++ warning: implicit element re-definition ignored: mcbxv.1r8
+++++++ warning: implicit element re-definition ignored: mqxb.a2r8
+++++++ warning: implicit element re-definition ignored: mcbxh.2r8
+++++++ warning: implicit element re-definition ignored: mcbxv.2r8
+++++++ warning: implicit element re-definition ignored: mqxb.b2r8
+++++++ warning: implicit element re-definition ignored: mqsx.3r8
+++++++ warning: implicit element re-definition ignored: mqxa.3r8
+++++++ warning: implicit element re-definition ignored: mcbxh.3r8
+++++++ warning: implicit element re-definition ignored: mcbxv.3r8
+++++++ warning: implicit element re-definition ignored: mcsx.3r8
+++++++ warning: implicit element re-definition ignored: mctx.3r8
+++++++ warning: implicit element re-definition ignored: mcosx.3r8
+++++++ warning: implicit element re-definition ignored: mcox.3r8
+++++++ warning: implicit element re-definition ignored: mcssx.3r8
+++++++ warning: implicit element re-definition ignored: dfbxh.3r8
+++++++ warning: implicit element re-definition ignored: mbx.4r8
+++++++ warning: implicit element re-definition ignored: tcddm.4r8
+++++++ warning: implicit element re-definition ignored: btvst.a4r8
+++++++ warning: implicit element re-definition ignored: branb.4r8
+++++++ warning: implicit element re-definition ignored: tanal.4l1
+++++++ warning: implicit element re-definition ignored: x1zdc.a4l1
+++++++ warning: implicit element re-definition ignored: brana.4l1
+++++++ warning: implicit element re-definition ignored: x1fcl.4l1
+++++++ warning: implicit element re-definition ignored: mbxw.f4l1
+++++++ warning: implicit element re-definition ignored: mbxw.e4l1
+++++++ warning: implicit element re-definition ignored: mbxw.d4l1
+++++++ warning: implicit element re-definition ignored: mbxw.c4l1
+++++++ warning: implicit element re-definition ignored: mbxw.b4l1
+++++++ warning: implicit element re-definition ignored: mbxw.a4l1
+++++++ warning: implicit element re-definition ignored: dfbxa.3l1
+++++++ warning: implicit element re-definition ignored: mcosx.3l1
+++++++ warning: implicit element re-definition ignored: mcox.3l1
+++++++ warning: implicit element re-definition ignored: mcssx.3l1
+++++++ warning: implicit element re-definition ignored: mcbxh.3l1
+++++++ warning: implicit element re-definition ignored: mcbxv.3l1
+++++++ warning: implicit element re-definition ignored: mcsx.3l1
+++++++ warning: implicit element re-definition ignored: mctx.3l1
+++++++ warning: implicit element re-definition ignored: mqxa.3l1
+++++++ warning: implicit element re-definition ignored: mqsx.3l1
+++++++ warning: implicit element re-definition ignored: tasb.3l1
+++++++ warning: implicit element re-definition ignored: mqxb.b2l1
+++++++ warning: implicit element re-definition ignored: mcbxh.2l1
+++++++ warning: implicit element re-definition ignored: mcbxv.2l1
+++++++ warning: implicit element re-definition ignored: mqxb.a2l1
+++++++ warning: implicit element re-definition ignored: mcbxh.1l1
+++++++ warning: implicit element re-definition ignored: mcbxv.1l1
+++++++ warning: implicit element re-definition ignored: mqxa.1l1
+++++++ warning: implicit element re-definition ignored: bpmwk.1l1
+++++++ warning: implicit element re-definition ignored: tas.1l1
+++++++ warning: implicit element re-definition ignored: mbas2.1l1
+++++++ warning: implicit element re-definition ignored: ip1.l1
+++++++ info: seqedit - number of elements installed:  0
+++++++ info: seqedit - number of elements moved:      0
+++++++ info: seqedit - number of elements removed:    0
+++++++ info: seqedit - number of elements replaced:   0
+++++++ info: seqedit - number of elements installed:  0
+++++++ info: seqedit - number of elements moved:      0
+++++++ info: seqedit - number of elements removed:    0
+++++++ info: seqedit - number of elements replaced:   0
+++++++ info: on_x1 redefined
+++++++ info: on_sep1 redefined
+++++++ info: on_oh1 redefined
+++++++ info: on_ov1 redefined
+++++++ info: on_ssep1 redefined
+++++++ info: on_xx1 redefined
+++++++ info: on_x2 redefined
+++++++ info: on_sep2 redefined
+++++++ info: on_o2 redefined
+++++++ info: on_a2 redefined
+++++++ info: on_oh2 redefined
+++++++ info: on_ov2 redefined
+++++++ info: on_x5 redefined
+++++++ info: on_sep5 redefined
+++++++ info: on_oh5 redefined
+++++++ info: on_ov5 redefined
+++++++ info: on_ssep5 redefined
+++++++ info: on_xx5 redefined
+++++++ info: on_x8 redefined
+++++++ info: on_sep8 redefined
+++++++ info: on_o8 redefined
+++++++ info: on_a8 redefined
+++++++ info: on_oh8 redefined
+++++++ info: on_ov8 redefined
+exec, match_tunes_ats(62.31000014, 60.31999996, 1);
+
+START MATCHING
+
+number of variables:    2
+user given constraints: 2
+total constraints:      2
+
+START LMDIF:
+
+Initial Penalty Function =   0.18985005E-14
+
+
+ ++++++++++ LMDIF ended: converged successfully
+call:       1   Penalty function =   0.18985005E-14
+
+MATCH SUMMARY
+
+Node_Name                  Constraint   Type  Target Value       Final Value        Penalty
+--------------------------------------------------------------------------------------------------
+lhcb1msia.exit.b1_p_:1     mux          4     6.23100001E+01     6.23100001E+01     5.05770050E-17
+lhcb1msia.exit.b1_p_:1     muy          4     6.03200000E+01     6.03200000E+01     1.84792346E-15
+
+
+Final Penalty Function =   1.89850046e-15
+
+
+
+
+
+Variable                 Final Value  Initial Value Lower Limit  Upper Limit 
+--------------------------------------------------------------------------------
+dqx.b1_sq                 0.00000e+00  0.00000e+00 -1.00000e+20  1.00000e+20
+dqy.b1_sq                 0.00000e+00  0.00000e+00 -1.00000e+20  1.00000e+20
+
+END MATCH SUMMARY
+
+VARIABLE "TAR" SET TO   1.89850046e-15
+exec, coupling_knob_ats(1);
+
+++++++ info: cmrs.b1 redefined
+++++++ info: cmrs.b2 redefined
+++++++ info: cmis.b1 redefined
+++++++ info: cmis.b2 redefined
+select, flag=twiss, clear;
+
+select, flag=twiss, pattern='^BPM.*\.B1$', column=NAME,S,BETX,ALFX,BETY,ALFY,DX,DY,DPX,DPY,X,Y,K1L,MUX,MUY,R11,R12,R21,R22;
+
+
+
+kqs.r1b1=kqs.r1b1+0.000020;
+
+++++++ info: kqs.r1b1 redefined
+twiss, file='model_opticsfile.22_Qx0.31_Qy0.32/twiss.kqs.r1b1';
+
+enter Twiss module
+  
+iteration:   1 error:   4.713705E-08 deltap:   0.000000E+00
+orbit:   3.237605E-08  4.845096E-10 -6.411520E-12  3.408580E-13  0.000000E+00  0.000000E+00
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+        26658.8832                 -0    0.0003483977548        53.57501807 
+
+                q1                dq1            betxmax              dxmax 
+       62.30999934        2.000000735        8012.900992        2.861363024 
+
+             dxrms             xcomax             xcorms                 q2 
+       1.499746179     2.72420523e-07    3.676990135e-08        60.32000078 
+
+               dq2            betymax              dymax              dyrms 
+       1.999995121        8012.915158    0.0008010250224    4.973307269e-05 
+
+            ycomax             ycorms             deltap            synch_1 
+   1.629838155e-10    2.053298646e-11                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+kqs.r1b1=kqs.r1b1-0.000020;
+
+++++++ info: kqs.r1b1 redefined
+
+
+kqs.a67b1=kqs.a67b1+0.000020;
+
+++++++ info: kqs.a67b1 redefined
+twiss, file='model_opticsfile.22_Qx0.31_Qy0.32/twiss.kqs.a67b1';
+
+enter Twiss module
+  
+iteration:   1 error:   4.713702E-08 deltap:   0.000000E+00
+orbit:   3.237604E-08  4.845093E-10  8.817781E-12 -6.484233E-13  0.000000E+00  0.000000E+00
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+        26658.8832                 -0    0.0003483977547        53.57501808 
+
+                q1                dq1            betxmax              dxmax 
+       62.30999784        1.999995152        8012.934778        2.861363041 
+
+             dxrms             xcomax             xcorms                 q2 
+       1.499746179    2.724205353e-07     3.67699008e-08        60.32000229 
+
+               dq2            betymax              dymax              dyrms 
+       2.000006885        8012.953862     0.001141908773    8.663249589e-05 
+
+            ycomax             ycorms             deltap            synch_1 
+   2.879550811e-10    3.471919621e-11                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+kqs.a67b1=kqs.a67b1-0.000020;
+
+++++++ info: kqs.a67b1 redefined
+
+
+kqs.l8b1=kqs.l8b1+0.000020;
+
+++++++ info: kqs.l8b1 redefined
+twiss, file='model_opticsfile.22_Qx0.31_Qy0.32/twiss.kqs.l8b1';
+
+enter Twiss module
+  
+iteration:   1 error:   4.713705E-08 deltap:   0.000000E+00
+orbit:   3.237604E-08  4.845095E-10 -2.393057E-12 -1.266440E-14  0.000000E+00  0.000000E+00
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+        26658.8832                 -0    0.0003483977548        53.57501807 
+
+                q1                dq1            betxmax              dxmax 
+       62.30999957        2.000002012        8012.898884        2.861363024 
+
+             dxrms             xcomax             xcorms                 q2 
+       1.499746179    2.724204936e-07     3.67698967e-08        60.32000054 
+
+               dq2            betymax              dymax              dyrms 
+        1.99999355        8012.908066    0.0007481026358    5.469912019e-05 
+
+            ycomax             ycorms             deltap            synch_1 
+   4.128729274e-11    5.553842466e-12                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+kqs.l8b1=kqs.l8b1-0.000020;
+
+++++++ info: kqs.l8b1 redefined
+
+
+
+  Number of warnings: 233
+233 in C and 0 in Fortran
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +          MAD-X finished normally         +
+  ++++++++++++++++++++++++++++++++++++++++++++
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +     MAD-X 5.06.00  (64 bit, Linux)       +
+  + Support: mad@cern.ch, http://cern.ch/mad +
+  + Release   date: 2020.08.13               +
+  + Execution date: 2021.03.25 11:23:55      +
+  ++++++++++++++++++++++++++++++++++++++++++++
+option, -echo;
+
+++++++ warning: implicit element re-definition ignored: ip1
+++++++ warning: implicit element re-definition ignored: mbas2.1r1
+++++++ warning: implicit element re-definition ignored: tas.1r1
+++++++ warning: implicit element re-definition ignored: bpmwk.1r1
+++++++ warning: implicit element re-definition ignored: mqxa.1r1
+++++++ warning: implicit element re-definition ignored: mcbxh.1r1
+++++++ warning: implicit element re-definition ignored: mcbxv.1r1
+++++++ warning: implicit element re-definition ignored: mqxb.a2r1
+++++++ warning: implicit element re-definition ignored: mcbxh.2r1
+++++++ warning: implicit element re-definition ignored: mcbxv.2r1
+++++++ warning: implicit element re-definition ignored: mqxb.b2r1
+++++++ warning: implicit element re-definition ignored: tasb.3r1
+++++++ warning: implicit element re-definition ignored: mqsx.3r1
+++++++ warning: implicit element re-definition ignored: mqxa.3r1
+++++++ warning: implicit element re-definition ignored: mcbxh.3r1
+++++++ warning: implicit element re-definition ignored: mcbxv.3r1
+++++++ warning: implicit element re-definition ignored: mcsx.3r1
+++++++ warning: implicit element re-definition ignored: mctx.3r1
+++++++ warning: implicit element re-definition ignored: mcosx.3r1
+++++++ warning: implicit element re-definition ignored: mcox.3r1
+++++++ warning: implicit element re-definition ignored: mcssx.3r1
+++++++ warning: implicit element re-definition ignored: dfbxb.3r1
+++++++ warning: implicit element re-definition ignored: mbxw.a4r1
+++++++ warning: implicit element re-definition ignored: mbxw.b4r1
+++++++ warning: implicit element re-definition ignored: mbxw.c4r1
+++++++ warning: implicit element re-definition ignored: mbxw.d4r1
+++++++ warning: implicit element re-definition ignored: mbxw.e4r1
+++++++ warning: implicit element re-definition ignored: mbxw.f4r1
+++++++ warning: implicit element re-definition ignored: x1fcr.4r1
+++++++ warning: implicit element re-definition ignored: brana.4r1
+++++++ warning: implicit element re-definition ignored: x1zdc.a4r1
+++++++ warning: implicit element re-definition ignored: tanar.4r1
+++++++ warning: implicit element re-definition ignored: x2zdc.4l2
+++++++ warning: implicit element re-definition ignored: branb.4l2
+++++++ warning: implicit element re-definition ignored: btvst.a4l2
+++++++ warning: implicit element re-definition ignored: tcdd.4l2
+++++++ warning: implicit element re-definition ignored: mbx.4l2
+++++++ warning: implicit element re-definition ignored: dfbxc.3l2
+++++++ warning: implicit element re-definition ignored: mcosx.3l2
+++++++ warning: implicit element re-definition ignored: mcox.3l2
+++++++ warning: implicit element re-definition ignored: mcssx.3l2
+++++++ warning: implicit element re-definition ignored: mcbxh.3l2
+++++++ warning: implicit element re-definition ignored: mcbxv.3l2
+++++++ warning: implicit element re-definition ignored: mcsx.3l2
+++++++ warning: implicit element re-definition ignored: mctx.3l2
+++++++ warning: implicit element re-definition ignored: mqxa.3l2
+++++++ warning: implicit element re-definition ignored: mqsx.3l2
+++++++ warning: implicit element re-definition ignored: mqxb.b2l2
+++++++ warning: implicit element re-definition ignored: mcbxh.2l2
+++++++ warning: implicit element re-definition ignored: mcbxv.2l2
+++++++ warning: implicit element re-definition ignored: mqxb.a2l2
+++++++ warning: implicit element re-definition ignored: mcbxh.1l2
+++++++ warning: implicit element re-definition ignored: mcbxv.1l2
+++++++ warning: implicit element re-definition ignored: mqxa.1l2
+++++++ warning: implicit element re-definition ignored: mbxwt.1l2
+++++++ warning: implicit element re-definition ignored: mbwmd.1l2
+++++++ warning: implicit element re-definition ignored: mbls2.1l2
+++++++ warning: implicit element re-definition ignored: ip2
+++++++ warning: implicit element re-definition ignored: mbls2.1r2
+++++++ warning: implicit element re-definition ignored: mbaw.1r2
+++++++ warning: implicit element re-definition ignored: mbxwt.1r2
+++++++ warning: implicit element re-definition ignored: mqxa.1r2
+++++++ warning: implicit element re-definition ignored: mcbxh.1r2
+++++++ warning: implicit element re-definition ignored: mcbxv.1r2
+++++++ warning: implicit element re-definition ignored: mqxb.a2r2
+++++++ warning: implicit element re-definition ignored: mcbxh.2r2
+++++++ warning: implicit element re-definition ignored: mcbxv.2r2
+++++++ warning: implicit element re-definition ignored: mqxb.b2r2
+++++++ warning: implicit element re-definition ignored: mqsx.3r2
+++++++ warning: implicit element re-definition ignored: mqxa.3r2
+++++++ warning: implicit element re-definition ignored: mcbxh.3r2
+++++++ warning: implicit element re-definition ignored: mcbxv.3r2
+++++++ warning: implicit element re-definition ignored: mcsx.3r2
+++++++ warning: implicit element re-definition ignored: mctx.3r2
+++++++ warning: implicit element re-definition ignored: mcosx.3r2
+++++++ warning: implicit element re-definition ignored: mcox.3r2
+++++++ warning: implicit element re-definition ignored: mcssx.3r2
+++++++ warning: implicit element re-definition ignored: dfbxd.3r2
+++++++ warning: implicit element re-definition ignored: mbx.4r2
+++++++ warning: implicit element re-definition ignored: tclia.4r2
+++++++ warning: implicit element re-definition ignored: branb.4r2
+++++++ warning: implicit element re-definition ignored: x2zdc.4r2
+++++++ warning: implicit element re-definition ignored: ip3
+++++++ warning: implicit element re-definition ignored: ip4
+++++++ warning: implicit element re-definition ignored: tanc.4l5
+++++++ warning: implicit element re-definition ignored: x5zdc.b4l5
+++++++ warning: implicit element re-definition ignored: brana.4l5
+++++++ warning: implicit element re-definition ignored: x5zdc.a4l5
+++++++ warning: implicit element re-definition ignored: x5fcb.a4l5
+++++++ warning: implicit element re-definition ignored: x5fca.b4l5
+++++++ warning: implicit element re-definition ignored: mbxw.f4l5
+++++++ warning: implicit element re-definition ignored: mbxw.e4l5
+++++++ warning: implicit element re-definition ignored: mbxw.d4l5
+++++++ warning: implicit element re-definition ignored: mbxw.c4l5
+++++++ warning: implicit element re-definition ignored: mbxw.b4l5
+++++++ warning: implicit element re-definition ignored: mbxw.a4l5
+++++++ warning: implicit element re-definition ignored: x5fca.a4l5
+++++++ warning: implicit element re-definition ignored: dfbxe.3l5
+++++++ warning: implicit element re-definition ignored: mcosx.3l5
+++++++ warning: implicit element re-definition ignored: mcox.3l5
+++++++ warning: implicit element re-definition ignored: mcssx.3l5
+++++++ warning: implicit element re-definition ignored: mcbxh.3l5
+++++++ warning: implicit element re-definition ignored: mcbxv.3l5
+++++++ warning: implicit element re-definition ignored: mcsx.3l5
+++++++ warning: implicit element re-definition ignored: mctx.3l5
+++++++ warning: implicit element re-definition ignored: mqxa.3l5
+++++++ warning: implicit element re-definition ignored: mqsx.3l5
+++++++ warning: implicit element re-definition ignored: tasb.3l5
+++++++ warning: implicit element re-definition ignored: mqxb.b2l5
+++++++ warning: implicit element re-definition ignored: mcbxh.2l5
+++++++ warning: implicit element re-definition ignored: mcbxv.2l5
+++++++ warning: implicit element re-definition ignored: mqxb.a2l5
+++++++ warning: implicit element re-definition ignored: mcbxh.1l5
+++++++ warning: implicit element re-definition ignored: mcbxv.1l5
+++++++ warning: implicit element re-definition ignored: mqxa.1l5
+++++++ warning: implicit element re-definition ignored: bpmwk.1l5
+++++++ warning: implicit element re-definition ignored: tas.1l5
+++++++ warning: implicit element re-definition ignored: mbcs2.1l5
+++++++ warning: implicit element re-definition ignored: ip5
+++++++ warning: implicit element re-definition ignored: mbcs2.1r5
+++++++ warning: implicit element re-definition ignored: tas.1r5
+++++++ warning: implicit element re-definition ignored: bpmwk.1r5
+++++++ warning: implicit element re-definition ignored: mqxa.1r5
+++++++ warning: implicit element re-definition ignored: mcbxh.1r5
+++++++ warning: implicit element re-definition ignored: mcbxv.1r5
+++++++ warning: implicit element re-definition ignored: mqxb.a2r5
+++++++ warning: implicit element re-definition ignored: mcbxh.2r5
+++++++ warning: implicit element re-definition ignored: mcbxv.2r5
+++++++ warning: implicit element re-definition ignored: mqxb.b2r5
+++++++ warning: implicit element re-definition ignored: tasb.3r5
+++++++ warning: implicit element re-definition ignored: mqsx.3r5
+++++++ warning: implicit element re-definition ignored: mqxa.3r5
+++++++ warning: implicit element re-definition ignored: mcbxh.3r5
+++++++ warning: implicit element re-definition ignored: mcbxv.3r5
+++++++ warning: implicit element re-definition ignored: mcsx.3r5
+++++++ warning: implicit element re-definition ignored: mctx.3r5
+++++++ warning: implicit element re-definition ignored: mcosx.3r5
+++++++ warning: implicit element re-definition ignored: mcox.3r5
+++++++ warning: implicit element re-definition ignored: mcssx.3r5
+++++++ warning: implicit element re-definition ignored: dfbxf.3r5
+++++++ warning: implicit element re-definition ignored: x5fca.b4r5
+++++++ warning: implicit element re-definition ignored: mbxw.a4r5
+++++++ warning: implicit element re-definition ignored: mbxw.b4r5
+++++++ warning: implicit element re-definition ignored: mbxw.c4r5
+++++++ warning: implicit element re-definition ignored: mbxw.d4r5
+++++++ warning: implicit element re-definition ignored: mbxw.e4r5
+++++++ warning: implicit element re-definition ignored: mbxw.f4r5
+++++++ warning: implicit element re-definition ignored: x5fca.a4r5
+++++++ warning: implicit element re-definition ignored: x5fcb.a4r5
+++++++ warning: implicit element re-definition ignored: x5zdc.b4r5
+++++++ warning: implicit element re-definition ignored: brana.4r5
+++++++ warning: implicit element re-definition ignored: x5zdc.a4r5
+++++++ warning: implicit element re-definition ignored: tanc.4r5
+++++++ warning: implicit element re-definition ignored: ip6
+++++++ warning: implicit element re-definition ignored: ip7
+++++++ warning: implicit element re-definition ignored: branb.4l8
+++++++ warning: implicit element re-definition ignored: tclia.4l8
+++++++ warning: implicit element re-definition ignored: mbx.4l8
+++++++ warning: implicit element re-definition ignored: dfbxg.3l8
+++++++ warning: implicit element re-definition ignored: mcosx.3l8
+++++++ warning: implicit element re-definition ignored: mcox.3l8
+++++++ warning: implicit element re-definition ignored: mcssx.3l8
+++++++ warning: implicit element re-definition ignored: mcbxh.3l8
+++++++ warning: implicit element re-definition ignored: mcbxv.3l8
+++++++ warning: implicit element re-definition ignored: mcsx.3l8
+++++++ warning: implicit element re-definition ignored: mctx.3l8
+++++++ warning: implicit element re-definition ignored: mqxa.3l8
+++++++ warning: implicit element re-definition ignored: mqsx.3l8
+++++++ warning: implicit element re-definition ignored: mqxb.b2l8
+++++++ warning: implicit element re-definition ignored: mcbxh.2l8
+++++++ warning: implicit element re-definition ignored: mcbxv.2l8
+++++++ warning: implicit element re-definition ignored: mqxb.a2l8
+++++++ warning: implicit element re-definition ignored: mcbxh.1l8
+++++++ warning: implicit element re-definition ignored: mcbxv.1l8
+++++++ warning: implicit element re-definition ignored: mqxa.1l8
+++++++ warning: implicit element re-definition ignored: mbxws.1l8
+++++++ warning: implicit element re-definition ignored: mbxwh.1l8
+++++++ warning: implicit element re-definition ignored: ip8
+++++++ warning: implicit element re-definition ignored: mblw.1r8
+++++++ warning: implicit element re-definition ignored: mbxws.1r8
+++++++ warning: implicit element re-definition ignored: mqxa.1r8
+++++++ warning: implicit element re-definition ignored: mcbxh.1r8
+++++++ warning: implicit element re-definition ignored: mcbxv.1r8
+++++++ warning: implicit element re-definition ignored: mqxb.a2r8
+++++++ warning: implicit element re-definition ignored: mcbxh.2r8
+++++++ warning: implicit element re-definition ignored: mcbxv.2r8
+++++++ warning: implicit element re-definition ignored: mqxb.b2r8
+++++++ warning: implicit element re-definition ignored: mqsx.3r8
+++++++ warning: implicit element re-definition ignored: mqxa.3r8
+++++++ warning: implicit element re-definition ignored: mcbxh.3r8
+++++++ warning: implicit element re-definition ignored: mcbxv.3r8
+++++++ warning: implicit element re-definition ignored: mcsx.3r8
+++++++ warning: implicit element re-definition ignored: mctx.3r8
+++++++ warning: implicit element re-definition ignored: mcosx.3r8
+++++++ warning: implicit element re-definition ignored: mcox.3r8
+++++++ warning: implicit element re-definition ignored: mcssx.3r8
+++++++ warning: implicit element re-definition ignored: dfbxh.3r8
+++++++ warning: implicit element re-definition ignored: mbx.4r8
+++++++ warning: implicit element re-definition ignored: tcddm.4r8
+++++++ warning: implicit element re-definition ignored: btvst.a4r8
+++++++ warning: implicit element re-definition ignored: branb.4r8
+++++++ warning: implicit element re-definition ignored: tanal.4l1
+++++++ warning: implicit element re-definition ignored: x1zdc.a4l1
+++++++ warning: implicit element re-definition ignored: brana.4l1
+++++++ warning: implicit element re-definition ignored: x1fcl.4l1
+++++++ warning: implicit element re-definition ignored: mbxw.f4l1
+++++++ warning: implicit element re-definition ignored: mbxw.e4l1
+++++++ warning: implicit element re-definition ignored: mbxw.d4l1
+++++++ warning: implicit element re-definition ignored: mbxw.c4l1
+++++++ warning: implicit element re-definition ignored: mbxw.b4l1
+++++++ warning: implicit element re-definition ignored: mbxw.a4l1
+++++++ warning: implicit element re-definition ignored: dfbxa.3l1
+++++++ warning: implicit element re-definition ignored: mcosx.3l1
+++++++ warning: implicit element re-definition ignored: mcox.3l1
+++++++ warning: implicit element re-definition ignored: mcssx.3l1
+++++++ warning: implicit element re-definition ignored: mcbxh.3l1
+++++++ warning: implicit element re-definition ignored: mcbxv.3l1
+++++++ warning: implicit element re-definition ignored: mcsx.3l1
+++++++ warning: implicit element re-definition ignored: mctx.3l1
+++++++ warning: implicit element re-definition ignored: mqxa.3l1
+++++++ warning: implicit element re-definition ignored: mqsx.3l1
+++++++ warning: implicit element re-definition ignored: tasb.3l1
+++++++ warning: implicit element re-definition ignored: mqxb.b2l1
+++++++ warning: implicit element re-definition ignored: mcbxh.2l1
+++++++ warning: implicit element re-definition ignored: mcbxv.2l1
+++++++ warning: implicit element re-definition ignored: mqxb.a2l1
+++++++ warning: implicit element re-definition ignored: mcbxh.1l1
+++++++ warning: implicit element re-definition ignored: mcbxv.1l1
+++++++ warning: implicit element re-definition ignored: mqxa.1l1
+++++++ warning: implicit element re-definition ignored: bpmwk.1l1
+++++++ warning: implicit element re-definition ignored: tas.1l1
+++++++ warning: implicit element re-definition ignored: mbas2.1l1
+++++++ warning: implicit element re-definition ignored: ip1.l1
+++++++ info: seqedit - number of elements installed:  0
+++++++ info: seqedit - number of elements moved:      0
+++++++ info: seqedit - number of elements removed:    0
+++++++ info: seqedit - number of elements replaced:   0
+++++++ info: seqedit - number of elements installed:  0
+++++++ info: seqedit - number of elements moved:      0
+++++++ info: seqedit - number of elements removed:    0
+++++++ info: seqedit - number of elements replaced:   0
+++++++ info: on_x1 redefined
+++++++ info: on_sep1 redefined
+++++++ info: on_oh1 redefined
+++++++ info: on_ov1 redefined
+++++++ info: on_ssep1 redefined
+++++++ info: on_xx1 redefined
+++++++ info: on_x2 redefined
+++++++ info: on_sep2 redefined
+++++++ info: on_o2 redefined
+++++++ info: on_a2 redefined
+++++++ info: on_oh2 redefined
+++++++ info: on_ov2 redefined
+++++++ info: on_x5 redefined
+++++++ info: on_sep5 redefined
+++++++ info: on_oh5 redefined
+++++++ info: on_ov5 redefined
+++++++ info: on_ssep5 redefined
+++++++ info: on_xx5 redefined
+++++++ info: on_x8 redefined
+++++++ info: on_sep8 redefined
+++++++ info: on_o8 redefined
+++++++ info: on_a8 redefined
+++++++ info: on_oh8 redefined
+++++++ info: on_ov8 redefined
+exec, match_tunes_ats(62.31000014, 60.31999996, 1);
+
+START MATCHING
+
+number of variables:    2
+user given constraints: 2
+total constraints:      2
+
+START LMDIF:
+
+Initial Penalty Function =   0.18985005E-14
+
+
+ ++++++++++ LMDIF ended: converged successfully
+call:       1   Penalty function =   0.18985005E-14
+
+MATCH SUMMARY
+
+Node_Name                  Constraint   Type  Target Value       Final Value        Penalty
+--------------------------------------------------------------------------------------------------
+lhcb1msia.exit.b1_p_:1     mux          4     6.23100001E+01     6.23100001E+01     5.05770050E-17
+lhcb1msia.exit.b1_p_:1     muy          4     6.03200000E+01     6.03200000E+01     1.84792346E-15
+
+
+Final Penalty Function =   1.89850046e-15
+
+
+
+
+
+Variable                 Final Value  Initial Value Lower Limit  Upper Limit 
+--------------------------------------------------------------------------------
+dqx.b1_sq                 0.00000e+00  0.00000e+00 -1.00000e+20  1.00000e+20
+dqy.b1_sq                 0.00000e+00  0.00000e+00 -1.00000e+20  1.00000e+20
+
+END MATCH SUMMARY
+
+VARIABLE "TAR" SET TO   1.89850046e-15
+exec, coupling_knob_ats(1);
+
+++++++ info: cmrs.b1 redefined
+++++++ info: cmrs.b2 redefined
+++++++ info: cmis.b1 redefined
+++++++ info: cmis.b2 redefined
+select, flag=twiss, clear;
+
+select, flag=twiss, pattern='^BPM.*\.B1$', column=NAME,S,BETX,ALFX,BETY,ALFY,DX,DY,DPX,DPY,X,Y,K1L,MUX,MUY,R11,R12,R21,R22;
+
+
+
+kqs.r5b1=kqs.r5b1+0.000020;
+
+++++++ info: kqs.r5b1 redefined
+twiss, file='model_opticsfile.22_Qx0.31_Qy0.32/twiss.kqs.r5b1';
+
+enter Twiss module
+  
+iteration:   1 error:   4.713705E-08 deltap:   0.000000E+00
+orbit:   3.237604E-08  4.845094E-10 -2.754483E-12 -2.727233E-14  0.000000E+00  0.000000E+00
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+        26658.8832                 -0    0.0003483977548        53.57501807 
+
+                q1                dq1            betxmax              dxmax 
+       62.30999934        2.000000721        8012.904235        2.861363024 
+
+             dxrms             xcomax             xcorms                 q2 
+       1.499746179    2.724204973e-07    3.676989721e-08        60.32000078 
+
+               dq2            betymax              dymax              dyrms 
+       1.999995133         8012.90833    0.0008010235484     4.97330676e-05 
+
+            ycomax             ycorms             deltap            synch_1 
+   5.556079149e-11    7.108094986e-12                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+kqs.r5b1=kqs.r5b1-0.000020;
+
+++++++ info: kqs.r5b1 redefined
+
+
+kqs.a45b1=kqs.a45b1+0.000020;
+
+++++++ info: kqs.a45b1 redefined
+twiss, file='model_opticsfile.22_Qx0.31_Qy0.32/twiss.kqs.a45b1';
+
+enter Twiss module
+  
+iteration:   1 error:   4.713705E-08 deltap:   0.000000E+00
+orbit:   3.237605E-08  4.845095E-10  4.581832E-12 -2.094776E-13  0.000000E+00  0.000000E+00
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+        26658.8832                 -0    0.0003483977548        53.57501807 
+
+                q1                dq1            betxmax              dxmax 
+       62.30999773        1.999995178        8012.939271        2.861363024 
+
+             dxrms             xcomax             xcorms                 q2 
+       1.499746179    2.724205505e-07    3.676989899e-08        60.32000239 
+
+               dq2            betymax              dymax              dyrms 
+       1.999994609        8012.942688     0.001222234819    8.245079699e-05 
+
+            ycomax             ycorms             deltap            synch_1 
+   9.944356584e-11    1.125921881e-11                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+kqs.a45b1=kqs.a45b1-0.000020;
+
+++++++ info: kqs.a45b1 redefined
+
+
+kqs.l6b1=kqs.l6b1+0.000020;
+
+++++++ info: kqs.l6b1 redefined
+twiss, file='model_opticsfile.22_Qx0.31_Qy0.32/twiss.kqs.l6b1';
+
+enter Twiss module
+  
+iteration:   1 error:   4.713705E-08 deltap:   0.000000E+00
+orbit:   3.237605E-08  4.845095E-10  2.132059E-11 -4.891320E-13  0.000000E+00  0.000000E+00
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+        26658.8832                 -0    0.0003483977548        53.57501807 
+
+                q1                dq1            betxmax              dxmax 
+       62.30999967        2.000002481        8012.948099        2.861363024 
+
+             dxrms             xcomax             xcorms                 q2 
+       1.499746179    2.724205683e-07    3.676990365e-08        60.32000044 
+
+               dq2            betymax              dymax              dyrms 
+       1.999992644        8012.945459    0.0008010224314    4.973303748e-05 
+
+            ycomax             ycorms             deltap            synch_1 
+   2.119067142e-10    2.635187657e-11                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+kqs.l6b1=kqs.l6b1-0.000020;
+
+++++++ info: kqs.l6b1 redefined
+
+
+
+  Number of warnings: 233
+233 in C and 0 in Fortran
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +          MAD-X finished normally         +
+  ++++++++++++++++++++++++++++++++++++++++++++
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +     MAD-X 5.06.00  (64 bit, Linux)       +
+  + Support: mad@cern.ch, http://cern.ch/mad +
+  + Release   date: 2020.08.13               +
+  + Execution date: 2021.03.25 11:23:55      +
+  ++++++++++++++++++++++++++++++++++++++++++++
+option, -echo;
+
+++++++ warning: implicit element re-definition ignored: ip1
+++++++ warning: implicit element re-definition ignored: mbas2.1r1
+++++++ warning: implicit element re-definition ignored: tas.1r1
+++++++ warning: implicit element re-definition ignored: bpmwk.1r1
+++++++ warning: implicit element re-definition ignored: mqxa.1r1
+++++++ warning: implicit element re-definition ignored: mcbxh.1r1
+++++++ warning: implicit element re-definition ignored: mcbxv.1r1
+++++++ warning: implicit element re-definition ignored: mqxb.a2r1
+++++++ warning: implicit element re-definition ignored: mcbxh.2r1
+++++++ warning: implicit element re-definition ignored: mcbxv.2r1
+++++++ warning: implicit element re-definition ignored: mqxb.b2r1
+++++++ warning: implicit element re-definition ignored: tasb.3r1
+++++++ warning: implicit element re-definition ignored: mqsx.3r1
+++++++ warning: implicit element re-definition ignored: mqxa.3r1
+++++++ warning: implicit element re-definition ignored: mcbxh.3r1
+++++++ warning: implicit element re-definition ignored: mcbxv.3r1
+++++++ warning: implicit element re-definition ignored: mcsx.3r1
+++++++ warning: implicit element re-definition ignored: mctx.3r1
+++++++ warning: implicit element re-definition ignored: mcosx.3r1
+++++++ warning: implicit element re-definition ignored: mcox.3r1
+++++++ warning: implicit element re-definition ignored: mcssx.3r1
+++++++ warning: implicit element re-definition ignored: dfbxb.3r1
+++++++ warning: implicit element re-definition ignored: mbxw.a4r1
+++++++ warning: implicit element re-definition ignored: mbxw.b4r1
+++++++ warning: implicit element re-definition ignored: mbxw.c4r1
+++++++ warning: implicit element re-definition ignored: mbxw.d4r1
+++++++ warning: implicit element re-definition ignored: mbxw.e4r1
+++++++ warning: implicit element re-definition ignored: mbxw.f4r1
+++++++ warning: implicit element re-definition ignored: x1fcr.4r1
+++++++ warning: implicit element re-definition ignored: brana.4r1
+++++++ warning: implicit element re-definition ignored: x1zdc.a4r1
+++++++ warning: implicit element re-definition ignored: tanar.4r1
+++++++ warning: implicit element re-definition ignored: x2zdc.4l2
+++++++ warning: implicit element re-definition ignored: branb.4l2
+++++++ warning: implicit element re-definition ignored: btvst.a4l2
+++++++ warning: implicit element re-definition ignored: tcdd.4l2
+++++++ warning: implicit element re-definition ignored: mbx.4l2
+++++++ warning: implicit element re-definition ignored: dfbxc.3l2
+++++++ warning: implicit element re-definition ignored: mcosx.3l2
+++++++ warning: implicit element re-definition ignored: mcox.3l2
+++++++ warning: implicit element re-definition ignored: mcssx.3l2
+++++++ warning: implicit element re-definition ignored: mcbxh.3l2
+++++++ warning: implicit element re-definition ignored: mcbxv.3l2
+++++++ warning: implicit element re-definition ignored: mcsx.3l2
+++++++ warning: implicit element re-definition ignored: mctx.3l2
+++++++ warning: implicit element re-definition ignored: mqxa.3l2
+++++++ warning: implicit element re-definition ignored: mqsx.3l2
+++++++ warning: implicit element re-definition ignored: mqxb.b2l2
+++++++ warning: implicit element re-definition ignored: mcbxh.2l2
+++++++ warning: implicit element re-definition ignored: mcbxv.2l2
+++++++ warning: implicit element re-definition ignored: mqxb.a2l2
+++++++ warning: implicit element re-definition ignored: mcbxh.1l2
+++++++ warning: implicit element re-definition ignored: mcbxv.1l2
+++++++ warning: implicit element re-definition ignored: mqxa.1l2
+++++++ warning: implicit element re-definition ignored: mbxwt.1l2
+++++++ warning: implicit element re-definition ignored: mbwmd.1l2
+++++++ warning: implicit element re-definition ignored: mbls2.1l2
+++++++ warning: implicit element re-definition ignored: ip2
+++++++ warning: implicit element re-definition ignored: mbls2.1r2
+++++++ warning: implicit element re-definition ignored: mbaw.1r2
+++++++ warning: implicit element re-definition ignored: mbxwt.1r2
+++++++ warning: implicit element re-definition ignored: mqxa.1r2
+++++++ warning: implicit element re-definition ignored: mcbxh.1r2
+++++++ warning: implicit element re-definition ignored: mcbxv.1r2
+++++++ warning: implicit element re-definition ignored: mqxb.a2r2
+++++++ warning: implicit element re-definition ignored: mcbxh.2r2
+++++++ warning: implicit element re-definition ignored: mcbxv.2r2
+++++++ warning: implicit element re-definition ignored: mqxb.b2r2
+++++++ warning: implicit element re-definition ignored: mqsx.3r2
+++++++ warning: implicit element re-definition ignored: mqxa.3r2
+++++++ warning: implicit element re-definition ignored: mcbxh.3r2
+++++++ warning: implicit element re-definition ignored: mcbxv.3r2
+++++++ warning: implicit element re-definition ignored: mcsx.3r2
+++++++ warning: implicit element re-definition ignored: mctx.3r2
+++++++ warning: implicit element re-definition ignored: mcosx.3r2
+++++++ warning: implicit element re-definition ignored: mcox.3r2
+++++++ warning: implicit element re-definition ignored: mcssx.3r2
+++++++ warning: implicit element re-definition ignored: dfbxd.3r2
+++++++ warning: implicit element re-definition ignored: mbx.4r2
+++++++ warning: implicit element re-definition ignored: tclia.4r2
+++++++ warning: implicit element re-definition ignored: branb.4r2
+++++++ warning: implicit element re-definition ignored: x2zdc.4r2
+++++++ warning: implicit element re-definition ignored: ip3
+++++++ warning: implicit element re-definition ignored: ip4
+++++++ warning: implicit element re-definition ignored: tanc.4l5
+++++++ warning: implicit element re-definition ignored: x5zdc.b4l5
+++++++ warning: implicit element re-definition ignored: brana.4l5
+++++++ warning: implicit element re-definition ignored: x5zdc.a4l5
+++++++ warning: implicit element re-definition ignored: x5fcb.a4l5
+++++++ warning: implicit element re-definition ignored: x5fca.b4l5
+++++++ warning: implicit element re-definition ignored: mbxw.f4l5
+++++++ warning: implicit element re-definition ignored: mbxw.e4l5
+++++++ warning: implicit element re-definition ignored: mbxw.d4l5
+++++++ warning: implicit element re-definition ignored: mbxw.c4l5
+++++++ warning: implicit element re-definition ignored: mbxw.b4l5
+++++++ warning: implicit element re-definition ignored: mbxw.a4l5
+++++++ warning: implicit element re-definition ignored: x5fca.a4l5
+++++++ warning: implicit element re-definition ignored: dfbxe.3l5
+++++++ warning: implicit element re-definition ignored: mcosx.3l5
+++++++ warning: implicit element re-definition ignored: mcox.3l5
+++++++ warning: implicit element re-definition ignored: mcssx.3l5
+++++++ warning: implicit element re-definition ignored: mcbxh.3l5
+++++++ warning: implicit element re-definition ignored: mcbxv.3l5
+++++++ warning: implicit element re-definition ignored: mcsx.3l5
+++++++ warning: implicit element re-definition ignored: mctx.3l5
+++++++ warning: implicit element re-definition ignored: mqxa.3l5
+++++++ warning: implicit element re-definition ignored: mqsx.3l5
+++++++ warning: implicit element re-definition ignored: tasb.3l5
+++++++ warning: implicit element re-definition ignored: mqxb.b2l5
+++++++ warning: implicit element re-definition ignored: mcbxh.2l5
+++++++ warning: implicit element re-definition ignored: mcbxv.2l5
+++++++ warning: implicit element re-definition ignored: mqxb.a2l5
+++++++ warning: implicit element re-definition ignored: mcbxh.1l5
+++++++ warning: implicit element re-definition ignored: mcbxv.1l5
+++++++ warning: implicit element re-definition ignored: mqxa.1l5
+++++++ warning: implicit element re-definition ignored: bpmwk.1l5
+++++++ warning: implicit element re-definition ignored: tas.1l5
+++++++ warning: implicit element re-definition ignored: mbcs2.1l5
+++++++ warning: implicit element re-definition ignored: ip5
+++++++ warning: implicit element re-definition ignored: mbcs2.1r5
+++++++ warning: implicit element re-definition ignored: tas.1r5
+++++++ warning: implicit element re-definition ignored: bpmwk.1r5
+++++++ warning: implicit element re-definition ignored: mqxa.1r5
+++++++ warning: implicit element re-definition ignored: mcbxh.1r5
+++++++ warning: implicit element re-definition ignored: mcbxv.1r5
+++++++ warning: implicit element re-definition ignored: mqxb.a2r5
+++++++ warning: implicit element re-definition ignored: mcbxh.2r5
+++++++ warning: implicit element re-definition ignored: mcbxv.2r5
+++++++ warning: implicit element re-definition ignored: mqxb.b2r5
+++++++ warning: implicit element re-definition ignored: tasb.3r5
+++++++ warning: implicit element re-definition ignored: mqsx.3r5
+++++++ warning: implicit element re-definition ignored: mqxa.3r5
+++++++ warning: implicit element re-definition ignored: mcbxh.3r5
+++++++ warning: implicit element re-definition ignored: mcbxv.3r5
+++++++ warning: implicit element re-definition ignored: mcsx.3r5
+++++++ warning: implicit element re-definition ignored: mctx.3r5
+++++++ warning: implicit element re-definition ignored: mcosx.3r5
+++++++ warning: implicit element re-definition ignored: mcox.3r5
+++++++ warning: implicit element re-definition ignored: mcssx.3r5
+++++++ warning: implicit element re-definition ignored: dfbxf.3r5
+++++++ warning: implicit element re-definition ignored: x5fca.b4r5
+++++++ warning: implicit element re-definition ignored: mbxw.a4r5
+++++++ warning: implicit element re-definition ignored: mbxw.b4r5
+++++++ warning: implicit element re-definition ignored: mbxw.c4r5
+++++++ warning: implicit element re-definition ignored: mbxw.d4r5
+++++++ warning: implicit element re-definition ignored: mbxw.e4r5
+++++++ warning: implicit element re-definition ignored: mbxw.f4r5
+++++++ warning: implicit element re-definition ignored: x5fca.a4r5
+++++++ warning: implicit element re-definition ignored: x5fcb.a4r5
+++++++ warning: implicit element re-definition ignored: x5zdc.b4r5
+++++++ warning: implicit element re-definition ignored: brana.4r5
+++++++ warning: implicit element re-definition ignored: x5zdc.a4r5
+++++++ warning: implicit element re-definition ignored: tanc.4r5
+++++++ warning: implicit element re-definition ignored: ip6
+++++++ warning: implicit element re-definition ignored: ip7
+++++++ warning: implicit element re-definition ignored: branb.4l8
+++++++ warning: implicit element re-definition ignored: tclia.4l8
+++++++ warning: implicit element re-definition ignored: mbx.4l8
+++++++ warning: implicit element re-definition ignored: dfbxg.3l8
+++++++ warning: implicit element re-definition ignored: mcosx.3l8
+++++++ warning: implicit element re-definition ignored: mcox.3l8
+++++++ warning: implicit element re-definition ignored: mcssx.3l8
+++++++ warning: implicit element re-definition ignored: mcbxh.3l8
+++++++ warning: implicit element re-definition ignored: mcbxv.3l8
+++++++ warning: implicit element re-definition ignored: mcsx.3l8
+++++++ warning: implicit element re-definition ignored: mctx.3l8
+++++++ warning: implicit element re-definition ignored: mqxa.3l8
+++++++ warning: implicit element re-definition ignored: mqsx.3l8
+++++++ warning: implicit element re-definition ignored: mqxb.b2l8
+++++++ warning: implicit element re-definition ignored: mcbxh.2l8
+++++++ warning: implicit element re-definition ignored: mcbxv.2l8
+++++++ warning: implicit element re-definition ignored: mqxb.a2l8
+++++++ warning: implicit element re-definition ignored: mcbxh.1l8
+++++++ warning: implicit element re-definition ignored: mcbxv.1l8
+++++++ warning: implicit element re-definition ignored: mqxa.1l8
+++++++ warning: implicit element re-definition ignored: mbxws.1l8
+++++++ warning: implicit element re-definition ignored: mbxwh.1l8
+++++++ warning: implicit element re-definition ignored: ip8
+++++++ warning: implicit element re-definition ignored: mblw.1r8
+++++++ warning: implicit element re-definition ignored: mbxws.1r8
+++++++ warning: implicit element re-definition ignored: mqxa.1r8
+++++++ warning: implicit element re-definition ignored: mcbxh.1r8
+++++++ warning: implicit element re-definition ignored: mcbxv.1r8
+++++++ warning: implicit element re-definition ignored: mqxb.a2r8
+++++++ warning: implicit element re-definition ignored: mcbxh.2r8
+++++++ warning: implicit element re-definition ignored: mcbxv.2r8
+++++++ warning: implicit element re-definition ignored: mqxb.b2r8
+++++++ warning: implicit element re-definition ignored: mqsx.3r8
+++++++ warning: implicit element re-definition ignored: mqxa.3r8
+++++++ warning: implicit element re-definition ignored: mcbxh.3r8
+++++++ warning: implicit element re-definition ignored: mcbxv.3r8
+++++++ warning: implicit element re-definition ignored: mcsx.3r8
+++++++ warning: implicit element re-definition ignored: mctx.3r8
+++++++ warning: implicit element re-definition ignored: mcosx.3r8
+++++++ warning: implicit element re-definition ignored: mcox.3r8
+++++++ warning: implicit element re-definition ignored: mcssx.3r8
+++++++ warning: implicit element re-definition ignored: dfbxh.3r8
+++++++ warning: implicit element re-definition ignored: mbx.4r8
+++++++ warning: implicit element re-definition ignored: tcddm.4r8
+++++++ warning: implicit element re-definition ignored: btvst.a4r8
+++++++ warning: implicit element re-definition ignored: branb.4r8
+++++++ warning: implicit element re-definition ignored: tanal.4l1
+++++++ warning: implicit element re-definition ignored: x1zdc.a4l1
+++++++ warning: implicit element re-definition ignored: brana.4l1
+++++++ warning: implicit element re-definition ignored: x1fcl.4l1
+++++++ warning: implicit element re-definition ignored: mbxw.f4l1
+++++++ warning: implicit element re-definition ignored: mbxw.e4l1
+++++++ warning: implicit element re-definition ignored: mbxw.d4l1
+++++++ warning: implicit element re-definition ignored: mbxw.c4l1
+++++++ warning: implicit element re-definition ignored: mbxw.b4l1
+++++++ warning: implicit element re-definition ignored: mbxw.a4l1
+++++++ warning: implicit element re-definition ignored: dfbxa.3l1
+++++++ warning: implicit element re-definition ignored: mcosx.3l1
+++++++ warning: implicit element re-definition ignored: mcox.3l1
+++++++ warning: implicit element re-definition ignored: mcssx.3l1
+++++++ warning: implicit element re-definition ignored: mcbxh.3l1
+++++++ warning: implicit element re-definition ignored: mcbxv.3l1
+++++++ warning: implicit element re-definition ignored: mcsx.3l1
+++++++ warning: implicit element re-definition ignored: mctx.3l1
+++++++ warning: implicit element re-definition ignored: mqxa.3l1
+++++++ warning: implicit element re-definition ignored: mqsx.3l1
+++++++ warning: implicit element re-definition ignored: tasb.3l1
+++++++ warning: implicit element re-definition ignored: mqxb.b2l1
+++++++ warning: implicit element re-definition ignored: mcbxh.2l1
+++++++ warning: implicit element re-definition ignored: mcbxv.2l1
+++++++ warning: implicit element re-definition ignored: mqxb.a2l1
+++++++ warning: implicit element re-definition ignored: mcbxh.1l1
+++++++ warning: implicit element re-definition ignored: mcbxv.1l1
+++++++ warning: implicit element re-definition ignored: mqxa.1l1
+++++++ warning: implicit element re-definition ignored: bpmwk.1l1
+++++++ warning: implicit element re-definition ignored: tas.1l1
+++++++ warning: implicit element re-definition ignored: mbas2.1l1
+++++++ warning: implicit element re-definition ignored: ip1.l1
+++++++ info: seqedit - number of elements installed:  0
+++++++ info: seqedit - number of elements moved:      0
+++++++ info: seqedit - number of elements removed:    0
+++++++ info: seqedit - number of elements replaced:   0
+++++++ info: seqedit - number of elements installed:  0
+++++++ info: seqedit - number of elements moved:      0
+++++++ info: seqedit - number of elements removed:    0
+++++++ info: seqedit - number of elements replaced:   0
+++++++ info: on_x1 redefined
+++++++ info: on_sep1 redefined
+++++++ info: on_oh1 redefined
+++++++ info: on_ov1 redefined
+++++++ info: on_ssep1 redefined
+++++++ info: on_xx1 redefined
+++++++ info: on_x2 redefined
+++++++ info: on_sep2 redefined
+++++++ info: on_o2 redefined
+++++++ info: on_a2 redefined
+++++++ info: on_oh2 redefined
+++++++ info: on_ov2 redefined
+++++++ info: on_x5 redefined
+++++++ info: on_sep5 redefined
+++++++ info: on_oh5 redefined
+++++++ info: on_ov5 redefined
+++++++ info: on_ssep5 redefined
+++++++ info: on_xx5 redefined
+++++++ info: on_x8 redefined
+++++++ info: on_sep8 redefined
+++++++ info: on_o8 redefined
+++++++ info: on_a8 redefined
+++++++ info: on_oh8 redefined
+++++++ info: on_ov8 redefined
+exec, match_tunes_ats(62.31000014, 60.31999996, 1);
+
+START MATCHING
+
+number of variables:    2
+user given constraints: 2
+total constraints:      2
+
+START LMDIF:
+
+Initial Penalty Function =   0.18985005E-14
+
+
+ ++++++++++ LMDIF ended: converged successfully
+call:       1   Penalty function =   0.18985005E-14
+
+MATCH SUMMARY
+
+Node_Name                  Constraint   Type  Target Value       Final Value        Penalty
+--------------------------------------------------------------------------------------------------
+lhcb1msia.exit.b1_p_:1     mux          4     6.23100001E+01     6.23100001E+01     5.05770050E-17
+lhcb1msia.exit.b1_p_:1     muy          4     6.03200000E+01     6.03200000E+01     1.84792346E-15
+
+
+Final Penalty Function =   1.89850046e-15
+
+
+
+
+
+Variable                 Final Value  Initial Value Lower Limit  Upper Limit 
+--------------------------------------------------------------------------------
+dqx.b1_sq                 0.00000e+00  0.00000e+00 -1.00000e+20  1.00000e+20
+dqy.b1_sq                 0.00000e+00  0.00000e+00 -1.00000e+20  1.00000e+20
+
+END MATCH SUMMARY
+
+VARIABLE "TAR" SET TO   1.89850046e-15
+exec, coupling_knob_ats(1);
+
+++++++ info: cmrs.b1 redefined
+++++++ info: cmrs.b2 redefined
+++++++ info: cmis.b1 redefined
+++++++ info: cmis.b2 redefined
+select, flag=twiss, clear;
+
+select, flag=twiss, pattern='^BPM.*\.B1$', column=NAME,S,BETX,ALFX,BETY,ALFY,DX,DY,DPX,DPY,X,Y,K1L,MUX,MUY,R11,R12,R21,R22;
+
+
+
+kqs.l2b1=kqs.l2b1+0.000020;
+
+++++++ info: kqs.l2b1 redefined
+twiss, file='model_opticsfile.22_Qx0.31_Qy0.32/twiss.kqs.l2b1';
+
+enter Twiss module
+  
+iteration:   1 error:   4.713705E-08 deltap:   0.000000E+00
+orbit:   3.237604E-08  4.845094E-10 -4.310588E-12 -2.768872E-15  0.000000E+00  0.000000E+00
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+        26658.8832                 -0    0.0003483977548        53.57501807 
+
+                q1                dq1            betxmax              dxmax 
+       62.30999967        2.000002486        8012.941853        2.861363024 
+
+             dxrms             xcomax             xcorms                 q2 
+       1.499746179    2.724205107e-07     3.67698968e-08        60.32000044 
+
+               dq2            betymax              dymax              dyrms 
+       1.999992637        8012.951476    0.0008010242695    4.973310018e-05 
+
+            ycomax             ycorms             deltap            synch_1 
+   6.168009955e-11    7.283368133e-12                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+kqs.l2b1=kqs.l2b1-0.000020;
+
+++++++ info: kqs.l2b1 redefined
+
+
+kqs.a81b1=kqs.a81b1+0.000020;
+
+++++++ info: kqs.a81b1 redefined
+twiss, file='model_opticsfile.22_Qx0.31_Qy0.32/twiss.kqs.a81b1';
+
+enter Twiss module
+  
+iteration:   1 error:   4.713702E-08 deltap:   0.000000E+00
+orbit:   3.237604E-08  4.845093E-10 -2.107898E-12  4.009595E-13  0.000000E+00  0.000000E+00
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+        26658.8832                 -0    0.0003483977548        53.57501807 
+
+                q1                dq1            betxmax              dxmax 
+       62.30999773        1.999994891        8012.936028        2.861363024 
+
+             dxrms             xcomax             xcorms                 q2 
+       1.499746179    2.724205301e-07    3.676989732e-08        60.32000239 
+
+               dq2            betymax              dymax              dyrms 
+       1.999997877        8012.948705     0.001222233616    8.245092187e-05 
+
+            ycomax             ycorms             deltap            synch_1 
+   2.245586519e-10    2.633461054e-11                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+kqs.a81b1=kqs.a81b1-0.000020;
+
+++++++ info: kqs.a81b1 redefined
+
+
+kqs.a23b1=kqs.a23b1+0.000020;
+
+++++++ info: kqs.a23b1 redefined
+twiss, file='model_opticsfile.22_Qx0.31_Qy0.32/twiss.kqs.a23b1';
+
+enter Twiss module
+  
+iteration:   1 error:   4.713705E-08 deltap:   0.000000E+00
+orbit:   3.237604E-08  4.845095E-10  5.532401E-12 -2.114042E-13  0.000000E+00  0.000000E+00
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+        26658.8832                 -0    0.0003483977548        53.57501807 
+
+                q1                dq1            betxmax              dxmax 
+       62.30999798        1.999991269        8012.945574        2.861363027 
+
+             dxrms             xcomax             xcorms                 q2 
+        1.49974618    2.724204805e-07    3.676989326e-08         60.3200021 
+
+               dq2            betymax              dymax              dyrms 
+       2.000004278        8012.923969     0.001296430928     0.000113267542 
+
+            ycomax             ycorms             deltap            synch_1 
+   1.021542338e-10    1.156567204e-11                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+kqs.a23b1=kqs.a23b1-0.000020;
+
+++++++ info: kqs.a23b1 redefined
+
+
+
+  Number of warnings: 233
+233 in C and 0 in Fortran
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +          MAD-X finished normally         +
+  ++++++++++++++++++++++++++++++++++++++++++++
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +     MAD-X 5.06.00  (64 bit, Linux)       +
+  + Support: mad@cern.ch, http://cern.ch/mad +
+  + Release   date: 2020.08.13               +
+  + Execution date: 2021.03.25 11:23:55      +
+  ++++++++++++++++++++++++++++++++++++++++++++
+option, -echo;
+
+++++++ warning: implicit element re-definition ignored: ip1
+++++++ warning: implicit element re-definition ignored: mbas2.1r1
+++++++ warning: implicit element re-definition ignored: tas.1r1
+++++++ warning: implicit element re-definition ignored: bpmwk.1r1
+++++++ warning: implicit element re-definition ignored: mqxa.1r1
+++++++ warning: implicit element re-definition ignored: mcbxh.1r1
+++++++ warning: implicit element re-definition ignored: mcbxv.1r1
+++++++ warning: implicit element re-definition ignored: mqxb.a2r1
+++++++ warning: implicit element re-definition ignored: mcbxh.2r1
+++++++ warning: implicit element re-definition ignored: mcbxv.2r1
+++++++ warning: implicit element re-definition ignored: mqxb.b2r1
+++++++ warning: implicit element re-definition ignored: tasb.3r1
+++++++ warning: implicit element re-definition ignored: mqsx.3r1
+++++++ warning: implicit element re-definition ignored: mqxa.3r1
+++++++ warning: implicit element re-definition ignored: mcbxh.3r1
+++++++ warning: implicit element re-definition ignored: mcbxv.3r1
+++++++ warning: implicit element re-definition ignored: mcsx.3r1
+++++++ warning: implicit element re-definition ignored: mctx.3r1
+++++++ warning: implicit element re-definition ignored: mcosx.3r1
+++++++ warning: implicit element re-definition ignored: mcox.3r1
+++++++ warning: implicit element re-definition ignored: mcssx.3r1
+++++++ warning: implicit element re-definition ignored: dfbxb.3r1
+++++++ warning: implicit element re-definition ignored: mbxw.a4r1
+++++++ warning: implicit element re-definition ignored: mbxw.b4r1
+++++++ warning: implicit element re-definition ignored: mbxw.c4r1
+++++++ warning: implicit element re-definition ignored: mbxw.d4r1
+++++++ warning: implicit element re-definition ignored: mbxw.e4r1
+++++++ warning: implicit element re-definition ignored: mbxw.f4r1
+++++++ warning: implicit element re-definition ignored: x1fcr.4r1
+++++++ warning: implicit element re-definition ignored: brana.4r1
+++++++ warning: implicit element re-definition ignored: x1zdc.a4r1
+++++++ warning: implicit element re-definition ignored: tanar.4r1
+++++++ warning: implicit element re-definition ignored: x2zdc.4l2
+++++++ warning: implicit element re-definition ignored: branb.4l2
+++++++ warning: implicit element re-definition ignored: btvst.a4l2
+++++++ warning: implicit element re-definition ignored: tcdd.4l2
+++++++ warning: implicit element re-definition ignored: mbx.4l2
+++++++ warning: implicit element re-definition ignored: dfbxc.3l2
+++++++ warning: implicit element re-definition ignored: mcosx.3l2
+++++++ warning: implicit element re-definition ignored: mcox.3l2
+++++++ warning: implicit element re-definition ignored: mcssx.3l2
+++++++ warning: implicit element re-definition ignored: mcbxh.3l2
+++++++ warning: implicit element re-definition ignored: mcbxv.3l2
+++++++ warning: implicit element re-definition ignored: mcsx.3l2
+++++++ warning: implicit element re-definition ignored: mctx.3l2
+++++++ warning: implicit element re-definition ignored: mqxa.3l2
+++++++ warning: implicit element re-definition ignored: mqsx.3l2
+++++++ warning: implicit element re-definition ignored: mqxb.b2l2
+++++++ warning: implicit element re-definition ignored: mcbxh.2l2
+++++++ warning: implicit element re-definition ignored: mcbxv.2l2
+++++++ warning: implicit element re-definition ignored: mqxb.a2l2
+++++++ warning: implicit element re-definition ignored: mcbxh.1l2
+++++++ warning: implicit element re-definition ignored: mcbxv.1l2
+++++++ warning: implicit element re-definition ignored: mqxa.1l2
+++++++ warning: implicit element re-definition ignored: mbxwt.1l2
+++++++ warning: implicit element re-definition ignored: mbwmd.1l2
+++++++ warning: implicit element re-definition ignored: mbls2.1l2
+++++++ warning: implicit element re-definition ignored: ip2
+++++++ warning: implicit element re-definition ignored: mbls2.1r2
+++++++ warning: implicit element re-definition ignored: mbaw.1r2
+++++++ warning: implicit element re-definition ignored: mbxwt.1r2
+++++++ warning: implicit element re-definition ignored: mqxa.1r2
+++++++ warning: implicit element re-definition ignored: mcbxh.1r2
+++++++ warning: implicit element re-definition ignored: mcbxv.1r2
+++++++ warning: implicit element re-definition ignored: mqxb.a2r2
+++++++ warning: implicit element re-definition ignored: mcbxh.2r2
+++++++ warning: implicit element re-definition ignored: mcbxv.2r2
+++++++ warning: implicit element re-definition ignored: mqxb.b2r2
+++++++ warning: implicit element re-definition ignored: mqsx.3r2
+++++++ warning: implicit element re-definition ignored: mqxa.3r2
+++++++ warning: implicit element re-definition ignored: mcbxh.3r2
+++++++ warning: implicit element re-definition ignored: mcbxv.3r2
+++++++ warning: implicit element re-definition ignored: mcsx.3r2
+++++++ warning: implicit element re-definition ignored: mctx.3r2
+++++++ warning: implicit element re-definition ignored: mcosx.3r2
+++++++ warning: implicit element re-definition ignored: mcox.3r2
+++++++ warning: implicit element re-definition ignored: mcssx.3r2
+++++++ warning: implicit element re-definition ignored: dfbxd.3r2
+++++++ warning: implicit element re-definition ignored: mbx.4r2
+++++++ warning: implicit element re-definition ignored: tclia.4r2
+++++++ warning: implicit element re-definition ignored: branb.4r2
+++++++ warning: implicit element re-definition ignored: x2zdc.4r2
+++++++ warning: implicit element re-definition ignored: ip3
+++++++ warning: implicit element re-definition ignored: ip4
+++++++ warning: implicit element re-definition ignored: tanc.4l5
+++++++ warning: implicit element re-definition ignored: x5zdc.b4l5
+++++++ warning: implicit element re-definition ignored: brana.4l5
+++++++ warning: implicit element re-definition ignored: x5zdc.a4l5
+++++++ warning: implicit element re-definition ignored: x5fcb.a4l5
+++++++ warning: implicit element re-definition ignored: x5fca.b4l5
+++++++ warning: implicit element re-definition ignored: mbxw.f4l5
+++++++ warning: implicit element re-definition ignored: mbxw.e4l5
+++++++ warning: implicit element re-definition ignored: mbxw.d4l5
+++++++ warning: implicit element re-definition ignored: mbxw.c4l5
+++++++ warning: implicit element re-definition ignored: mbxw.b4l5
+++++++ warning: implicit element re-definition ignored: mbxw.a4l5
+++++++ warning: implicit element re-definition ignored: x5fca.a4l5
+++++++ warning: implicit element re-definition ignored: dfbxe.3l5
+++++++ warning: implicit element re-definition ignored: mcosx.3l5
+++++++ warning: implicit element re-definition ignored: mcox.3l5
+++++++ warning: implicit element re-definition ignored: mcssx.3l5
+++++++ warning: implicit element re-definition ignored: mcbxh.3l5
+++++++ warning: implicit element re-definition ignored: mcbxv.3l5
+++++++ warning: implicit element re-definition ignored: mcsx.3l5
+++++++ warning: implicit element re-definition ignored: mctx.3l5
+++++++ warning: implicit element re-definition ignored: mqxa.3l5
+++++++ warning: implicit element re-definition ignored: mqsx.3l5
+++++++ warning: implicit element re-definition ignored: tasb.3l5
+++++++ warning: implicit element re-definition ignored: mqxb.b2l5
+++++++ warning: implicit element re-definition ignored: mcbxh.2l5
+++++++ warning: implicit element re-definition ignored: mcbxv.2l5
+++++++ warning: implicit element re-definition ignored: mqxb.a2l5
+++++++ warning: implicit element re-definition ignored: mcbxh.1l5
+++++++ warning: implicit element re-definition ignored: mcbxv.1l5
+++++++ warning: implicit element re-definition ignored: mqxa.1l5
+++++++ warning: implicit element re-definition ignored: bpmwk.1l5
+++++++ warning: implicit element re-definition ignored: tas.1l5
+++++++ warning: implicit element re-definition ignored: mbcs2.1l5
+++++++ warning: implicit element re-definition ignored: ip5
+++++++ warning: implicit element re-definition ignored: mbcs2.1r5
+++++++ warning: implicit element re-definition ignored: tas.1r5
+++++++ warning: implicit element re-definition ignored: bpmwk.1r5
+++++++ warning: implicit element re-definition ignored: mqxa.1r5
+++++++ warning: implicit element re-definition ignored: mcbxh.1r5
+++++++ warning: implicit element re-definition ignored: mcbxv.1r5
+++++++ warning: implicit element re-definition ignored: mqxb.a2r5
+++++++ warning: implicit element re-definition ignored: mcbxh.2r5
+++++++ warning: implicit element re-definition ignored: mcbxv.2r5
+++++++ warning: implicit element re-definition ignored: mqxb.b2r5
+++++++ warning: implicit element re-definition ignored: tasb.3r5
+++++++ warning: implicit element re-definition ignored: mqsx.3r5
+++++++ warning: implicit element re-definition ignored: mqxa.3r5
+++++++ warning: implicit element re-definition ignored: mcbxh.3r5
+++++++ warning: implicit element re-definition ignored: mcbxv.3r5
+++++++ warning: implicit element re-definition ignored: mcsx.3r5
+++++++ warning: implicit element re-definition ignored: mctx.3r5
+++++++ warning: implicit element re-definition ignored: mcosx.3r5
+++++++ warning: implicit element re-definition ignored: mcox.3r5
+++++++ warning: implicit element re-definition ignored: mcssx.3r5
+++++++ warning: implicit element re-definition ignored: dfbxf.3r5
+++++++ warning: implicit element re-definition ignored: x5fca.b4r5
+++++++ warning: implicit element re-definition ignored: mbxw.a4r5
+++++++ warning: implicit element re-definition ignored: mbxw.b4r5
+++++++ warning: implicit element re-definition ignored: mbxw.c4r5
+++++++ warning: implicit element re-definition ignored: mbxw.d4r5
+++++++ warning: implicit element re-definition ignored: mbxw.e4r5
+++++++ warning: implicit element re-definition ignored: mbxw.f4r5
+++++++ warning: implicit element re-definition ignored: x5fca.a4r5
+++++++ warning: implicit element re-definition ignored: x5fcb.a4r5
+++++++ warning: implicit element re-definition ignored: x5zdc.b4r5
+++++++ warning: implicit element re-definition ignored: brana.4r5
+++++++ warning: implicit element re-definition ignored: x5zdc.a4r5
+++++++ warning: implicit element re-definition ignored: tanc.4r5
+++++++ warning: implicit element re-definition ignored: ip6
+++++++ warning: implicit element re-definition ignored: ip7
+++++++ warning: implicit element re-definition ignored: branb.4l8
+++++++ warning: implicit element re-definition ignored: tclia.4l8
+++++++ warning: implicit element re-definition ignored: mbx.4l8
+++++++ warning: implicit element re-definition ignored: dfbxg.3l8
+++++++ warning: implicit element re-definition ignored: mcosx.3l8
+++++++ warning: implicit element re-definition ignored: mcox.3l8
+++++++ warning: implicit element re-definition ignored: mcssx.3l8
+++++++ warning: implicit element re-definition ignored: mcbxh.3l8
+++++++ warning: implicit element re-definition ignored: mcbxv.3l8
+++++++ warning: implicit element re-definition ignored: mcsx.3l8
+++++++ warning: implicit element re-definition ignored: mctx.3l8
+++++++ warning: implicit element re-definition ignored: mqxa.3l8
+++++++ warning: implicit element re-definition ignored: mqsx.3l8
+++++++ warning: implicit element re-definition ignored: mqxb.b2l8
+++++++ warning: implicit element re-definition ignored: mcbxh.2l8
+++++++ warning: implicit element re-definition ignored: mcbxv.2l8
+++++++ warning: implicit element re-definition ignored: mqxb.a2l8
+++++++ warning: implicit element re-definition ignored: mcbxh.1l8
+++++++ warning: implicit element re-definition ignored: mcbxv.1l8
+++++++ warning: implicit element re-definition ignored: mqxa.1l8
+++++++ warning: implicit element re-definition ignored: mbxws.1l8
+++++++ warning: implicit element re-definition ignored: mbxwh.1l8
+++++++ warning: implicit element re-definition ignored: ip8
+++++++ warning: implicit element re-definition ignored: mblw.1r8
+++++++ warning: implicit element re-definition ignored: mbxws.1r8
+++++++ warning: implicit element re-definition ignored: mqxa.1r8
+++++++ warning: implicit element re-definition ignored: mcbxh.1r8
+++++++ warning: implicit element re-definition ignored: mcbxv.1r8
+++++++ warning: implicit element re-definition ignored: mqxb.a2r8
+++++++ warning: implicit element re-definition ignored: mcbxh.2r8
+++++++ warning: implicit element re-definition ignored: mcbxv.2r8
+++++++ warning: implicit element re-definition ignored: mqxb.b2r8
+++++++ warning: implicit element re-definition ignored: mqsx.3r8
+++++++ warning: implicit element re-definition ignored: mqxa.3r8
+++++++ warning: implicit element re-definition ignored: mcbxh.3r8
+++++++ warning: implicit element re-definition ignored: mcbxv.3r8
+++++++ warning: implicit element re-definition ignored: mcsx.3r8
+++++++ warning: implicit element re-definition ignored: mctx.3r8
+++++++ warning: implicit element re-definition ignored: mcosx.3r8
+++++++ warning: implicit element re-definition ignored: mcox.3r8
+++++++ warning: implicit element re-definition ignored: mcssx.3r8
+++++++ warning: implicit element re-definition ignored: dfbxh.3r8
+++++++ warning: implicit element re-definition ignored: mbx.4r8
+++++++ warning: implicit element re-definition ignored: tcddm.4r8
+++++++ warning: implicit element re-definition ignored: btvst.a4r8
+++++++ warning: implicit element re-definition ignored: branb.4r8
+++++++ warning: implicit element re-definition ignored: tanal.4l1
+++++++ warning: implicit element re-definition ignored: x1zdc.a4l1
+++++++ warning: implicit element re-definition ignored: brana.4l1
+++++++ warning: implicit element re-definition ignored: x1fcl.4l1
+++++++ warning: implicit element re-definition ignored: mbxw.f4l1
+++++++ warning: implicit element re-definition ignored: mbxw.e4l1
+++++++ warning: implicit element re-definition ignored: mbxw.d4l1
+++++++ warning: implicit element re-definition ignored: mbxw.c4l1
+++++++ warning: implicit element re-definition ignored: mbxw.b4l1
+++++++ warning: implicit element re-definition ignored: mbxw.a4l1
+++++++ warning: implicit element re-definition ignored: dfbxa.3l1
+++++++ warning: implicit element re-definition ignored: mcosx.3l1
+++++++ warning: implicit element re-definition ignored: mcox.3l1
+++++++ warning: implicit element re-definition ignored: mcssx.3l1
+++++++ warning: implicit element re-definition ignored: mcbxh.3l1
+++++++ warning: implicit element re-definition ignored: mcbxv.3l1
+++++++ warning: implicit element re-definition ignored: mcsx.3l1
+++++++ warning: implicit element re-definition ignored: mctx.3l1
+++++++ warning: implicit element re-definition ignored: mqxa.3l1
+++++++ warning: implicit element re-definition ignored: mqsx.3l1
+++++++ warning: implicit element re-definition ignored: tasb.3l1
+++++++ warning: implicit element re-definition ignored: mqxb.b2l1
+++++++ warning: implicit element re-definition ignored: mcbxh.2l1
+++++++ warning: implicit element re-definition ignored: mcbxv.2l1
+++++++ warning: implicit element re-definition ignored: mqxb.a2l1
+++++++ warning: implicit element re-definition ignored: mcbxh.1l1
+++++++ warning: implicit element re-definition ignored: mcbxv.1l1
+++++++ warning: implicit element re-definition ignored: mqxa.1l1
+++++++ warning: implicit element re-definition ignored: bpmwk.1l1
+++++++ warning: implicit element re-definition ignored: tas.1l1
+++++++ warning: implicit element re-definition ignored: mbas2.1l1
+++++++ warning: implicit element re-definition ignored: ip1.l1
+++++++ info: seqedit - number of elements installed:  0
+++++++ info: seqedit - number of elements moved:      0
+++++++ info: seqedit - number of elements removed:    0
+++++++ info: seqedit - number of elements replaced:   0
+++++++ info: seqedit - number of elements installed:  0
+++++++ info: seqedit - number of elements moved:      0
+++++++ info: seqedit - number of elements removed:    0
+++++++ info: seqedit - number of elements replaced:   0
+++++++ info: on_x1 redefined
+++++++ info: on_sep1 redefined
+++++++ info: on_oh1 redefined
+++++++ info: on_ov1 redefined
+++++++ info: on_ssep1 redefined
+++++++ info: on_xx1 redefined
+++++++ info: on_x2 redefined
+++++++ info: on_sep2 redefined
+++++++ info: on_o2 redefined
+++++++ info: on_a2 redefined
+++++++ info: on_oh2 redefined
+++++++ info: on_ov2 redefined
+++++++ info: on_x5 redefined
+++++++ info: on_sep5 redefined
+++++++ info: on_oh5 redefined
+++++++ info: on_ov5 redefined
+++++++ info: on_ssep5 redefined
+++++++ info: on_xx5 redefined
+++++++ info: on_x8 redefined
+++++++ info: on_sep8 redefined
+++++++ info: on_o8 redefined
+++++++ info: on_a8 redefined
+++++++ info: on_oh8 redefined
+++++++ info: on_ov8 redefined
+exec, match_tunes_ats(62.31000014, 60.31999996, 1);
+
+START MATCHING
+
+number of variables:    2
+user given constraints: 2
+total constraints:      2
+
+START LMDIF:
+
+Initial Penalty Function =   0.18985005E-14
+
+
+ ++++++++++ LMDIF ended: converged successfully
+call:       1   Penalty function =   0.18985005E-14
+
+MATCH SUMMARY
+
+Node_Name                  Constraint   Type  Target Value       Final Value        Penalty
+--------------------------------------------------------------------------------------------------
+lhcb1msia.exit.b1_p_:1     mux          4     6.23100001E+01     6.23100001E+01     5.05770050E-17
+lhcb1msia.exit.b1_p_:1     muy          4     6.03200000E+01     6.03200000E+01     1.84792346E-15
+
+
+Final Penalty Function =   1.89850046e-15
+
+
+
+
+
+Variable                 Final Value  Initial Value Lower Limit  Upper Limit 
+--------------------------------------------------------------------------------
+dqx.b1_sq                 0.00000e+00  0.00000e+00 -1.00000e+20  1.00000e+20
+dqy.b1_sq                 0.00000e+00  0.00000e+00 -1.00000e+20  1.00000e+20
+
+END MATCH SUMMARY
+
+VARIABLE "TAR" SET TO   1.89850046e-15
+exec, coupling_knob_ats(1);
+
+++++++ info: cmrs.b1 redefined
+++++++ info: cmrs.b2 redefined
+++++++ info: cmis.b1 redefined
+++++++ info: cmis.b2 redefined
+select, flag=twiss, clear;
+
+select, flag=twiss, pattern='^BPM.*\.B1$', column=NAME,S,BETX,ALFX,BETY,ALFY,DX,DY,DPX,DPY,X,Y,K1L,MUX,MUY,R11,R12,R21,R22;
+
+
+
+kqs.r7b1=kqs.r7b1+0.000020;
+
+++++++ info: kqs.r7b1 redefined
+twiss, file='model_opticsfile.22_Qx0.31_Qy0.32/twiss.kqs.r7b1';
+
+enter Twiss module
+  
+iteration:   1 error:   4.713705E-08 deltap:   0.000000E+00
+orbit:   3.237605E-08  4.845095E-10 -1.183135E-11  5.846392E-13  0.000000E+00  0.000000E+00
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+        26658.8832                 -0    0.0003483977548        53.57501807 
+
+                q1                dq1            betxmax              dxmax 
+       62.30999957        2.000002027        8012.957619        2.861363024 
+
+             dxrms             xcomax             xcorms                 q2 
+       1.499746179    2.724205867e-07    3.676990538e-08        60.32000054 
+
+               dq2            betymax              dymax              dyrms 
+       1.999993534        8012.955624    0.0007481032214    6.026517815e-05 
+
+            ycomax             ycorms             deltap            synch_1 
+   2.056752892e-10    2.785372044e-11                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+kqs.r7b1=kqs.r7b1-0.000020;
+
+++++++ info: kqs.r7b1 redefined
+
+
+twiss, file='model_opticsfile.22_Qx0.31_Qy0.32/twiss.0';
+
+enter Twiss module
+  
+iteration:   1 error:   4.713705E-08 deltap:   0.000000E+00
+orbit:   3.237604E-08  4.845094E-10  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+        26658.8832                 -0    0.0003483977548        53.57501807 
+
+                q1                dq1            betxmax              dxmax 
+       62.31000014        2.000004853        8012.927372        2.861363024 
+
+             dxrms             xcomax             xcorms                 q2 
+       1.499746179    2.724204924e-07    3.676989628e-08        60.31999996 
+
+               dq2            betymax              dymax              dyrms 
+       1.999990151        8012.924827                 -0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips 
+                 0                  0                  0 
+
+  Number of warnings: 233
+233 in C and 0 in Fortran
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +          MAD-X finished normally         +
+  ++++++++++++++++++++++++++++++++++++++++++++

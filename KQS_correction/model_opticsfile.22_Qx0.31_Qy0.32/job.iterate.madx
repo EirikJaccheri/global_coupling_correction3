@@ -1,0 +1,21 @@
+option, -echo;
+call, file = '/home/eirik/CERN/global_coupling_correction3/KQS_correction/model_opticsfile.22_Qx0.31_Qy0.32/macros/general.macros.madx';
+call, file = '/home/eirik/CERN/global_coupling_correction3/KQS_correction/model_opticsfile.22_Qx0.31_Qy0.32/macros/lhc.macros.madx';
+title, "Model from Lukas :-)";
+call, file = '/home/eirik/CERN/omc3/omc3/model/accelerators/lhc/2018/main.seq';
+
+exec, define_nominal_beams();
+call, file = '/home/eirik/CERN/lhc/PROTON/opticsfile.22';
+exec, cycle_sequences();
+xing_angles = 0;
+if(xing_angles==1){
+    exec, set_crossing_scheme_ON();
+}else{
+    exec, set_default_crossing_scheme();
+}
+use, sequence = LHCB1;
+option, echo;
+exec, match_tunes(0.31, 0.32, 1);
+exec, coupling_knob(1);
+exec, select_monitors();
+call, file = '/home/eirik/CERN/global_coupling_correction3/KQS_correction/model_opticsfile.22_Qx0.31_Qy0.32/iter.madx';

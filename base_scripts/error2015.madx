@@ -1,0 +1,35 @@
+system,"ln -fns %lhc_path lhc";
+
+Option, -echo,-warn,-info;
+call,file="lhc/lhc_as-built.seq";
+call,file="lhc/toolkit/macro.madx";
+call,file="lhc/PROTON/%opticsfile";
+
+
+Option, echo,warn,info;
+exec,mk_beam(6500);
+use, sequence=lhcb1;
+
+if (%correct == 1){
+call, file = "outputfiles/changeparameters_iter_correct.madx";
+}
+
+
+kqtf.a45b1 = kqtf.a45b1 - 0.0002350;
+kqtf.a56b1 = kqtf.a56b1 + 0.0002350;
+kqtf.a67b1 = kqtf.a67b1 + 0.0002350;
+kqtf.a78b1 = kqtf.a78b1 + 0.0002350;
+kqtf.a81b1 = kqtf.a81b1 - 0.0009;
+
+
+!match before or after??
+MATCH, SEQUENCE=lhcb1;
+VARY, NAME=dQx.b1, STEP=1.0E-5;
+VARY, NAME=dQy.b1, STEP=1.0E-5;
+CONSTRAINT, SEQUENCE=lhcb1, RANGE=#e, MUX=%QX, MUY=%QY;
+LMDIF, CALLS=100, TOLERANCE=0.0000001;
+endmatch;
+
+select, flag = twiss,column=name, s, betx, bety, mux, muy, alfx, alfy, R11, R12, R21, R22, pattern =%twiss_pattern;
+twiss, file="outputfiles/twiss.dat";
+stop;

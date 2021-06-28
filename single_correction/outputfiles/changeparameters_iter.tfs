@@ -1,0 +1,6 @@
+@ PATH                 %s        "outputfiles"
+@ DATE                 %s "Tue Apr 27 09:59:02 2021"
+* NAME                                DELTA
+$ %s                                    %le
+  "cmis.b1_sq"            -0.00357518513427
+  "cmrs.b1_sq"            -0.00457394745229
